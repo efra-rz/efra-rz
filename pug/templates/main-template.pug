@@ -1,0 +1,97 @@
+block config
+  include ../config/config.pug
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(name='description' content=pageDescription)
+    title #{pageTitle} | #{empresaTitle}
+    link(rel='stylesheet', href='css/style.css')
+  body.dev
+    header.main-header__topbar
+      .ed-container
+        // Start logo
+        .ed-item.s-100.m-1-3.cross-center
+          a(href="/"): img(src='img/logo-web.png', alt='')
+        // End logo
+        
+        // Start menu
+        nav.ed-item.s-100.m-2-3.cross-center
+          ul.ed-menu.l-horizontal.nav-bar
+            block inicio
+              li: a(href='/') Home
+            block acerca
+              li: a(href='/acerca.html') Acerca
+            block servicios
+              li: a(href='/servicios.html') Servicios
+            block proyectos
+              li: a(href='/blog.html') Blog
+            block contacto
+              li: a(href='/contacto.html') Contacto
+        // End menu
+    
+    //********************
+    //*Start main content*
+    //********************
+    
+    block main
+      // Start section banner
+      include ../includes/sections/home-banner.pug
+      // End section banner
+
+      // Start section services
+      include ../includes/sections/home-services.pug
+      // End section services
+
+      // Start section blog
+      include ../includes/sections/home-blog.pug    
+      // End section blog
+
+      // Start section projects
+      include ../includes/sections/home-projects.pug
+      // End section projects
+
+    //*******************
+    //****End content****
+    //*******************
+    
+    // Start footer
+    footer.main-footer--bak-container
+      // Start footer main container
+      article.ed-container
+        // Start footer about
+        section.ed-item.s-100.m-500.m-1-3
+          h1 Acerca
+          img(src='img/logo-web.png', alt='')
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque laboriosam ea velit voluptatem ratione neque odit, a totam nam, dolorum cum magni nihil libero inventore sapiente. Asperiores, veritatis architecto.
+          h2 Social Network
+          ul
+            li Mail
+            li Github
+            li Codepen
+            li Facebook
+        // End footer about
+        // Start footer contact
+        section.ed-item.s-100.m-500.m-1-3
+          h1 Facebook
+          address
+            a(href='mailto:contacto@efra-rz.com') contacto@efra-rz.com
+        // End footer contact
+        // Start footer Facebook
+        section.ed-item.s-100.m-500.m-1-3
+          h1 Contacto
+          address
+            a(href='mailto:contacto@efra-rz.com') contacto@efra-rz.com
+        // End footer Facebook
+      // End footer main container
+      .footer-bottom
+        section
+          p Pie de página
+    // End footer
+    
+    // Scripts
+    script(src='js/ed-grid.js')
+    script(src='js/babel/menu.js')
