@@ -12,16 +12,28 @@
       display: block;
     }
 .home-banner--bak-container{
-  background-image: url(http://via.placeholder.com/1920x700);
-  background-position: center;
-  padding:15em;
-  margin-top: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%)
+  background: #650077;
+  margin-top:0; /*Hereda el margintop de los estios reseteados*/
+  padding:8em 0 10em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+  position:relative;
   }
-  .home-banner h1{
-    font-size: 5em;
-    text-align: center;
-    margin: 0;
+  .home-banner__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.3;
+    }
+  .home-banner__data{
+    position: relative;
+    h1{
+      font-size: 3em;
+      text-align: center;
+      color:#fff;
+      }
     }
 .section--title{
     font-size: 3em;
@@ -44,6 +56,7 @@
 .home-blog--bak-container{
   background-color: #555;
   padding: 2em 0 4em 0;
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 94%);
   }
 .home-main-blog-card{
   background-color: #fff;
@@ -61,6 +74,9 @@
 .main-footer--bak-container{
   background-color: #333;
   color:#fff;
+  h1, h2{
+    color:#fff;
+    }
   }
   .main-footer--bak-container a{
     color:#fff;
