@@ -2631,6 +2631,9 @@ Main-menu
       line-height: 2em !important;
       border-right: 1px solid rgba(255, 252, 253, 0.3); } }
 
+.main-menu__menu-active {
+  opacity: 1; }
+
 /*******************
 *******************
 General-styles
