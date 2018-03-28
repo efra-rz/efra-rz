@@ -25,6 +25,7 @@ Home-banner-section
   }
   .main-header__topbar img{
       display: block;
+      padding: .2em 0;
     }
 
 /*******************
@@ -70,6 +71,7 @@ Home-srvices-section
   border-radius: .25em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background-color: #fff;
+  margin-bottom: 1em;
   }
 .home-services--img{
   display: block;
@@ -88,7 +90,7 @@ Home-srvices-section
 .home-blog--bak-container{
   background-color: #555;
   padding: 2em 0 8em 0;
-  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 94%);
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
   position: relative;
   }
 .home-main-blog-card{

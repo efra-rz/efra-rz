@@ -2605,6 +2605,34 @@ body.sticky-footer {
 
 /*******************
 *******************
+Main-menu
+*******************
+*******************/
+.main-menu {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 0px;
+  padding: 0; }
+
+.main-menu .main-menu__item:last-child .main-menu__link {
+  border-right: 0; }
+
+.main-menu__link {
+  font-weight: 400;
+  font-size: 1em;
+  color: #FFFCFD;
+  text-transform: uppercase;
+  opacity: .7; }
+  .main-menu__link:hover {
+    opacity: 1;
+    text-decoration: underline !important; }
+  @media screen and (min-width: 600px) {
+    .main-menu__link {
+      line-height: 2em !important;
+      border-right: 1px solid rgba(255, 252, 253, 0.3); } }
+
+/*******************
+*******************
 General-styles
 *******************
 *******************/
@@ -2626,7 +2654,8 @@ Home-banner-section
   padding: .5em 0; }
 
 .main-header__topbar img {
-  display: block; }
+  display: block;
+  padding: .2em 0; }
 
 /*******************
 *******************
@@ -2670,7 +2699,8 @@ Home-srvices-section
   border-radius: .25em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 1em; }
 
 .home-services--img {
   display: block;
@@ -2687,8 +2717,8 @@ Home-srvices-section
 .home-blog--bak-container {
   background-color: #555;
   padding: 2em 0 8em 0;
-  -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 94%);
-  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 94%);
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
   position: relative; }
 
 .home-main-blog-card {
