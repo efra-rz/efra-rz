@@ -1,9 +1,24 @@
+/*******************
+*******************
+General-styles
+*******************
+*******************/
+
 .home-blog--bak-container, .home-services--bak-container,
 .home-banner--bak-container,
 .home-projects--back-container{
   margin: 2em 0 4em 0;
 }
 
+.section--title{
+    font-size: 3em;
+  }
+
+/*******************
+*******************
+Home-banner-section
+*******************
+*******************/
 .main-header__topbar{
   background-color: #333;
   padding: .5em 0;
@@ -11,6 +26,13 @@
   .main-header__topbar img{
       display: block;
     }
+
+/*******************
+*******************
+Home-banner-section
+*******************
+*******************/
+
 .home-banner--bak-container{
   background: #650077;
   margin-top:0; /*Hereda el margintop de los estios reseteados*/
@@ -35,9 +57,13 @@
       color:#fff;
       }
     }
-.section--title{
-    font-size: 3em;
-  }
+
+/*******************
+*******************
+Home-srvices-section
+*******************
+*******************/
+
 .home-services--single-service{
   border:1px solid #dfe0e0;
   /* padding:0; */
@@ -53,6 +79,12 @@
   padding: .5em;
   }
 
+  /*******************
+  *******************
+  Home-blog-section
+  *******************
+  *******************/
+
 .home-blog--bak-container{
   background-color: #555;
   padding: 2em 0 4em 0;
@@ -64,6 +96,13 @@
   .home-main-blog-card img{
     display: block
     }
+
+/*******************
+*******************
+Home-projects-section
+*******************
+*******************/
+
 .home-projects--single-project{
   border:1px solid #dfe0e0;
   border-radius: .25em;
@@ -71,6 +110,12 @@
   background-color: #fff;
   margin-bottom: 2em;
 }
+
+/*******************
+*******************
+Home-footer-section
+*******************
+*******************/
 .main-footer--bak-container{
   background-color: #333;
   color:#fff;
