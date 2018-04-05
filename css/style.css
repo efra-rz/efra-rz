@@ -2639,13 +2639,29 @@ Main-menu
 General-styles
 *******************
 *******************/
-.home-blog--bak-container, .home-services--bak-container,
+body {
+  font-family: lato;
+  color: #53575A; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: Open Sans; }
+
+.bodyBg {
+  background: -webkit-linear-gradient(315deg, #f9f8f9 22px, rgba(231, 225, 231, 0.6) 22px, rgba(231, 225, 231, 0.6) 24px, transparent 24px, transparent 67px, rgba(231, 225, 231, 0.6) 67px, rgba(231, 225, 231, 0.6) 69px, transparent 69px), -webkit-linear-gradient(225deg, #f9f8f9 22px, rgba(231, 225, 231, 0.6) 22px, rgba(231, 225, 231, 0.6) 24px, transparent 24px, transparent 67px, rgba(231, 225, 231, 0.6) 67px, rgba(231, 225, 231, 0.6) 69px, transparent 69px) 0 64px;
+  background: -o-linear-gradient(315deg, #f9f8f9 22px, rgba(231, 225, 231, 0.6) 22px, rgba(231, 225, 231, 0.6) 24px, transparent 24px, transparent 67px, rgba(231, 225, 231, 0.6) 67px, rgba(231, 225, 231, 0.6) 69px, transparent 69px), -o-linear-gradient(225deg, #f9f8f9 22px, rgba(231, 225, 231, 0.6) 22px, rgba(231, 225, 231, 0.6) 24px, transparent 24px, transparent 67px, rgba(231, 225, 231, 0.6) 67px, rgba(231, 225, 231, 0.6) 69px, transparent 69px) 0 64px;
+  background: linear-gradient(135deg, #f9f8f9 22px, rgba(231, 225, 231, 0.6) 22px, rgba(231, 225, 231, 0.6) 24px, transparent 24px, transparent 67px, rgba(231, 225, 231, 0.6) 67px, rgba(231, 225, 231, 0.6) 69px, transparent 69px), linear-gradient(225deg, #f9f8f9 22px, rgba(231, 225, 231, 0.6) 22px, rgba(231, 225, 231, 0.6) 24px, transparent 24px, transparent 67px, rgba(231, 225, 231, 0.6) 67px, rgba(231, 225, 231, 0.6) 69px, transparent 69px) 0 64px;
+  background-color: #f9f8f9;
+  background-size: 64px 128px; }
+
+.hola-banner--bak-container,
+.home-blog--bak-container,
+.home-services--bak-container,
 .home-banner--bak-container,
 .home-projects--back-container {
   margin: 2em 0 4em 0; }
 
 .section--title {
-  font-size: 3em; }
+  font-size: 3em;
+  color: #282d31; }
 
 /*******************
 *******************
@@ -2665,7 +2681,8 @@ Home-banner-section
 Home-banner-section
 *******************
 *******************/
-.home-banner--bak-container {
+.home-banner--bak-container,
+.hola-banner--bak-container {
   background: #650077;
   margin-top: 0;
   /*Hereda el margintop de los estios reseteados*/
@@ -2673,6 +2690,10 @@ Home-banner-section
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
   position: relative; }
+
+.hola-banner--bak-container {
+  background: #c29b00;
+  padding: 4em 0 5em 0; }
 
 .home-banner__img {
   position: absolute;
@@ -2690,6 +2711,20 @@ Home-banner-section
     font-size: 3em;
     text-align: center;
     color: #fff; }
+
+.hola-banner__data {
+  position: relative; }
+  .hola-banner__data img {
+    border-radius: 50%; }
+  .hola-banner__data h1, .hola-banner__data span {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: .3em; }
+  .hola-banner__data span {
+    font-size: 2em;
+    text-align: center;
+    display: block; }
 
 /*******************
 *******************
@@ -2710,7 +2745,31 @@ Home-srvices-section
   border-radius: .25em .25em 0 0; }
 
 .home-services--single-service__info {
-  padding: .5em; }
+  padding: .7em; }
+  .home-services--single-service__info h2 {
+    font-size: 1.3em;
+    margin-top: 0; }
+  .home-services--single-service__info p {
+    font-size: 1em;
+    color: #53575A; }
+  .home-services--single-service__info a {
+    text-decoration: none; }
+
+.homeServices__title {
+  color: #650077; }
+
+.home-services__link,
+.single-project__link {
+  border: 1px solid red;
+  padding: .9em .6em;
+  line-height: 0;
+  display: inline-block;
+  color: red;
+  font-size: .9em;
+  margin-bottom: .5em; }
+  .home-services__link:hover,
+  .single-project__link:hover {
+    text-decoration: underline; }
 
 /*******************
   *******************
@@ -2725,10 +2784,26 @@ Home-srvices-section
   position: relative; }
 
 .home-main-blog-card {
-  background-color: #fff; }
+  background-color: #fff;
+  font-size: 1.2em; }
+  .home-main-blog-card h2 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid rgba(83, 87, 90, 0.3); }
+  .home-main-blog-card img {
+    display: block; }
+  .home-main-blog-card p {
+    line-height: 1.5em; }
+  .home-main-blog-card a {
+    text-decoration: none;
+    font-size: .9em; }
 
-.home-main-blog-card img {
-  display: block; }
+.mainBlog__link {
+  color: #650077;
+  padding: .5em;
+  border: 1px solid #650077; }
+  .mainBlog__link:hover {
+    color: #fff;
+    background-color: #650077; }
 
 /*******************
 *******************
@@ -2742,6 +2817,16 @@ Home-projects-section
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background-color: #fff;
   margin-bottom: 2em; }
+  .home-projects--single-project h2 {
+    font-size: 1.3em;
+    margin: .2em 0;
+    color: #53575A;
+    border-bottom: 1px solid rgba(83, 87, 90, 0.3); }
+
+.single-project__link {
+  border: 1px solid #650077;
+  color: #650077;
+  margin: .8em 0; }
 
 /*******************
 *******************
@@ -2749,17 +2834,52 @@ Home-footer-section
 *******************
 *******************/
 .main-footer--bak-container {
+  padding-top: 2em;
   background-color: #333;
-  color: #fff; }
+  color: #fcfcfc; }
   .main-footer--bak-container h1, .main-footer--bak-container h2 {
-    color: #fff; }
+    color: #fcfcfc;
+    padding-bottom: .5em;
+    border-bottom: 1px solid rgba(231, 225, 231, 0.6);
+    text-transform: uppercase; }
 
 .main-footer--bak-container a {
-  color: #fff; }
+  color: #fcfcfc; }
+
+.footer-description {
+  line-height: 1.5em; }
+
+.footer-enlaces,
+.footer-blog {
+  list-style-type: none;
+  padding: 0; }
+  .footer-enlaces li,
+  .footer-blog li {
+    margin-bottom: .3em; }
+  .footer-enlaces a,
+  .footer-blog a {
+    font-size: .9em;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .footer-enlaces a:hover,
+    .footer-blog a:hover {
+      background-color: rgba(231, 225, 231, 0.6);
+      color: #650077;
+      padding-left: .5em; }
+
+.footer__social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.3em 0 2em; }
+  .footer__social-icons li {
+    display: inline-block;
+    margin-left: .2em; }
 
 .footer-bottom {
   background-color: #222;
-  padding: 1em 0; }
+  padding: 1em 0;
+  margin-top: 2em; }
 
 .footer-bottom p {
   margin: 0;

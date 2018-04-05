@@ -3,8 +3,24 @@
 General-styles
 *******************
 *******************/
-
-.home-blog--bak-container, .home-services--bak-container,
+body{
+  font-family: lato;
+  color:$textGray;
+  h1,h2,h3,h4,h5,h6{
+    font-family: Open Sans;
+    }
+  }
+.bodyBg{
+  // background-color: $bodyBg;
+  background:
+linear-gradient(135deg, $bodyBg 22px, $borderBg 22px, $borderBg 24px, transparent 24px, transparent 67px, $borderBg 67px, $borderBg 69px, transparent 69px),
+linear-gradient(225deg, $bodyBg 22px, $borderBg 22px, $borderBg 24px, transparent 24px, transparent 67px, $borderBg 67px, $borderBg 69px, transparent 69px)0 64px;
+background-color:$bodyBg;
+background-size: 64px 128px;
+  }
+.hola-banner--bak-container,
+.home-blog--bak-container,
+.home-services--bak-container,
 .home-banner--bak-container,
 .home-projects--back-container{
   margin: 2em 0 4em 0;
@@ -12,6 +28,7 @@ General-styles
 
 .section--title{
     font-size: 3em;
+    color:$dark;
   }
 
 /*******************
@@ -34,13 +51,18 @@ Home-banner-section
 *******************
 *******************/
 
-.home-banner--bak-container{
-  background: #650077;
+.home-banner--bak-container,
+.hola-banner--bak-container{
+  background: $first;
   margin-top:0; /*Hereda el margintop de los estios reseteados*/
   padding:8em 0 10em;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
   position:relative;
   }
+  .hola-banner--bak-container{
+    background: #c29b00;
+    padding: 4em 0 5em 0;
+    }
   .home-banner__img{
     position: absolute;
     width: 100%;
@@ -58,6 +80,23 @@ Home-banner-section
       color:#fff;
       }
     }
+  .hola-banner__data{
+    position: relative;
+    img{
+      border-radius: 50%;
+      }
+    h1, span{
+      font-size: 3em;
+      text-align: center;
+      color:#fff;
+      margin-bottom:.3em;
+    }
+    span{
+      font-size: 2em;
+      text-align: center;
+      display: block;
+    }
+  }
 
 /*******************
 *******************
@@ -78,8 +117,35 @@ Home-srvices-section
   border-radius: .25em .25em 0 0;
   }
 .home-services--single-service__info{
-  padding: .5em;
+  padding: .7em;
+  h2{
+    font-size: 1.3em;
+    margin-top: 0;
+    }
+  p{
+    font-size: 1em;
+    color:$textGray;
+    }
+  a{
+    text-decoration:none;
+    }
   }
+  .homeServices__title{
+    color:$first;
+    }
+  .home-services__link,
+  .single-project__link{
+    border: 1px solid red;
+    padding:.9em .6em;
+    line-height: 0;
+    display: inline-block;
+    color:red;
+    font-size: .9em;
+    margin-bottom: .5em;
+    &:hover{
+      text-decoration: underline;
+      }
+    }
 
   /*******************
   *******************
@@ -95,10 +161,31 @@ Home-srvices-section
   }
 .home-main-blog-card{
   background-color: #fff;
-  }
-  .home-main-blog-card img{
+  font-size: $blog-text;
+  h2{
+    padding-bottom: .3em;
+    border-bottom: 1px solid rgba($textGray, .3);
+    }
+  img{
     display: block
     }
+  p{
+    line-height: 1.5em;
+    }
+  a{
+    text-decoration: none;
+    font-size: .9em;
+    }
+  }
+.mainBlog__link{
+  color:$first;
+  padding:.5em;
+  border: 1px solid $first;
+  &:hover{
+    color:#fff;
+    background-color: $first;
+    }
+  }
 
 /*******************
 *******************
@@ -112,7 +199,18 @@ Home-projects-section
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background-color: #fff;
   margin-bottom: 2em;
+  h2{
+    font-size: 1.3em;
+    margin: .2em 0;
+    color:$textGray;
+    border-bottom: 1px solid rgba($textGray, .3);
+    }
 }
+  .single-project__link{
+    border: 1px solid $first;
+    color:$first;
+    margin:.8em 0;
+    }
 
 /*******************
 *******************
@@ -120,18 +218,55 @@ Home-footer-section
 *******************
 *******************/
 .main-footer--bak-container{
+  padding-top: 2em;
   background-color: #333;
-  color:#fff;
+  color:#fcfcfc;
   h1, h2{
-    color:#fff;
+    color:#fcfcfc;
+    padding-bottom: .5em;
+    border-bottom:1px solid $borderBg;
+    text-transform: uppercase;
     }
   }
   .main-footer--bak-container a{
-    color:#fff;
+    color:#fcfcfc;
     }
+.footer-description{
+  line-height: 1.5em;
+  }
+.footer-enlaces,
+.footer-blog{
+  list-style-type: none;
+  padding:0;
+  li{
+    margin-bottom: .3em;
+    }
+  a{
+    font-size: .9em;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover{
+      background-color: $borderBg;
+      color:$first;
+      padding-left:.5em;
+      }
+    }
+  }
+.footer__social-icons{
+  list-style-type: none;
+  padding: 0;
+  margin:1.3em 0 2em;
+  li{
+    display:inline-block;
+    margin-left: .2em;
+    }
+  }
 .footer-bottom{
   background-color: #222;
   padding: 1em 0;
+  margin-top:2em;
 }
 .footer-bottom p{
   margin: 0;

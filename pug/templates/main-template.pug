@@ -9,7 +9,31 @@ html(lang='es')
     meta(name='description' content=pageDescription)
     title #{pageTitle} | #{empresaTitle}
     link(rel='stylesheet', href='css/style.css')
-  body
+    // Start of Zendesk Chat Script
+    script(type='text/javascript').
+      window.$zopim || (function(d, s) {
+      var z = $zopim = function(c) {
+      z._.push(c)
+      },
+      $ = z.s =
+      d.createElement(s),
+      e = d.getElementsByTagName(s)[0];
+      z.set = function(o) {
+      z.set.
+      _.push(o)
+      };
+      z._ = [];
+      z.set._ = [];
+      $.async = !0;
+      $.setAttribute("charset", "utf-8");
+      $.src = "https://v2.zopim.com/?5X6uiB8fHthbsbilZe3sLb6R35xwUzXe";
+      z.t = +new Date;
+      $.
+      type = "text/javascript";
+      e.parentNode.insertBefore($, e)
+      })(document, "script");
+    // End of Zendesk Chat Script
+  body.bodyBg
     header.main-header__topbar
       .ed-container
         // Start logo
@@ -24,7 +48,7 @@ html(lang='es')
             block inicio
               li.main-menu__item: a(href='/').main-menu__link Home
             block acerca
-              li.main-menu__item: a(href='/acerca.html').main-menu__link Acerca
+              li.main-menu__item: a(href='/hola.html').main-menu__link Hola
             block servicios
               li.main-menu__item: a(href='/servicios.html').main-menu__link Servicios
             block proyectos
@@ -51,31 +75,40 @@ html(lang='es')
         section.ed-item.s-100.m-500.m-1-3
           h1 Acerca
           img(src='img/logo-web.png', alt='')
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque laboriosam ea velit voluptatem ratione neque odit, a totam nam, dolorum cum magni nihil libero inventore sapiente. Asperiores, veritatis architecto.
-          h2 Social Network
-          ul
-            li Mail
-            li Github
-            li Codepen
-            li Facebook
+          p.footer-description
+            | Hola, soy programador y desarrollador web independiente orientado en tecnologías Frontend (HTML, CSS, JS) y me encuentro ubicado en Mty, N.L. México.
+          ul.footer__social-icons
+            li: a(href="https://www.facebook.com/efradesarrollo/" target="_blank"): img(src="img/if_facebook_48.png", alt="" width="40px")
+            li: a(href="skype:effrix?chat" target="_blank"): img(src="img/if_skype_48.png", alt="" width="40px")
+            li: a(href="https://github.com/efrix" target="_blank"): img(src="img/if_github_48.png", alt="" width="40px")
+            li: a(href="https://telegram.me/efrix396" target="_blank"): img(src="img/if_telegram_48.png", alt="" width="40px")
+            li: a(href="https://api.whatsapp.com/send?phone=521818460228&text=Hi, I contacted you Through your website." target="_blank"): img(src="img/if_whatsapp_48.png", alt="" width="40px")
+            
         // End footer about
         // Start footer contact
         section.ed-item.s-100.m-500.m-1-3
-          h1 Facebook
-          address
-            a(href='mailto:contacto@efra-rz.com') contacto@efra-rz.com
+          h1 Enlaces
+          ul.footer-enlaces
+            li: a(href='#') Página web informativa
+            li: a(href="#") Página web corporativa
+            li: a(href="#") Senssthetic
+          h1 Blog
+          ul.footer-blog
+            li: a(href='#') Primeros pasos en git
+
         // End footer contact
         // Start footer Facebook
         section.ed-item.s-100.m-500.m-1-3
           h1 Contacto
-          address
-            a(href='mailto:contacto@efra-rz.com') contacto@efra-rz.com
+          address 
+            p Allende 314 Pte. Centro de Mty, NL, MX.
+            p Tel: (044) 818-460-2228
+            p Email: info@efra-rz.com
         // End footer Facebook
       // End footer main container
       .footer-bottom
         section
-          p Pie de página
+          p 2018 || efra-rz.com
     // End footer
     
     // Scripts

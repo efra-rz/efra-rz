@@ -1,0 +1,39 @@
+extends templates/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Hola'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block acerca
+  li.main-menu__item: a(href='/hola.html').main-menu__link.main-menu__menu-active Hola
+
+//- CONTENIDO
+block main
+  // Start section banner
+  include includes/sections/hola-banner.pug
+  // End section banner
+  
+  //Start section home
+  section.ed-container.hola-main
+    .ed-item.l-50.l-order-2
+      h2 Habilidades
+      ul
+        li Responsive Desing / UI
+        li HTML / CSS / Javascript
+        li PHP / MySQL / Wordpress
+        li Markdown / Git / Github
+        li Pug / Sass
+        li Frameworks Frontend
+    .ed-item.l-50.l-order-1
+      h2 titulo
+      p Hola soy Programador y Desarrollador Web ubicado  en Mty, N.L. México, iniciando actividades formalmente desde 2012.
+
+      p Actualmente desarrollo y colaboro en proyectos web de manera independiente, orientado en tecnologías Frontend (Html, CSS y Javascript) y con conocimiento básico de Backend (PHP,Wordpress,MySQL).
+
+      p Trato de  llevar un estilo de vida saludable por lo que me gusta mucho hacer ejercicio tanto en gimnasio y al aire libre como escalar o andar en bicicleta.
+
+      p En el 2017 cambié mis habitos alimenticios y ahora llevo regularmente una dieta libre de alimentos procesados y de origen animal, lo que me ha ayudado a mejorar mi rendimiento físico y mental.
+
+      p ¡Saludos y en lo que te pueda ayudar no dudes en contactarme!
+  
+  //end section home

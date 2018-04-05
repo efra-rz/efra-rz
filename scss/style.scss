@@ -22,7 +22,15 @@
   $main-col-l   :  lighten($main-col, 15%);
   $sec-col      :  #fff;
   $thrd-col     :  #CFDE77;
+  $bodyBg       :  #f9f8f9;
+  $border       : #e7e1e7;
+  $borderBg       : rgba($border,.6);
+  $textGray     :  #53575A;
+  $dark         :  #282d31;
+  $first        :  #650077;
 
+//TAMAÑOS DE FUENTES
+  $blog-text: 1.2em;
 // ESTILOS BASE
   $body--background   :   #fff;                             // fondo para el body
   $body--font-family  :   'Lato', sans-serif;               // fuente predeterminada
