@@ -1,0 +1,18 @@
+extends templates/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block proyectos
+  li.main-menu__item: a(href='/proyectos.html').main-menu__link.main-menu__menu-active Proyectos
+//- CONTENIDO
+block main
+  // Start section banner
+  include includes/sections/proyectos-banner.pug
+  // End section banner
+  
+  //Proyectos start section description
+  include includes/sections/home-projects.pug
+  //Proyectos end section description

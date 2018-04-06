@@ -1,0 +1,30 @@
+extends templates/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block blog
+  li.main-menu__item: a(href='/blog.html').main-menu__link.main-menu__menu-active Blog
+//- CONTENIDO
+block main
+  // Start section banner
+  include includes/sections/blog-banner.pug
+  // End section banner
+  // Entradas blog start
+  .home-projects--back-container
+    section.ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Entradas recientes
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .blog--gridPost
+          a(href="http://senssthetic.com"): img(src='img/800x500-primeros-pasos-git.jpg', alt='')
+          .blog--gridPost__info
+            a(href="#"): h2 Primeros pasos con git
+            p   Git es la tecnología de control de versiones desarrollada por Linus Torvalds. Comenta Torvalds que el objetivo principal git era el dar soporte a su primer gran proyecto la manutención del kernel "Linux"...
+            a(href="http://senssthetic.com").blog--gridPost__link Leer más...
+
+  // Entradas blog end

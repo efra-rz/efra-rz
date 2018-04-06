@@ -9,6 +9,9 @@ body{
   h1,h2,h3,h4,h5,h6{
     font-family: Open Sans;
     }
+  a{
+    transition: all 0.2s;
+    }
   }
 .bodyBg{
   // background-color: $bodyBg;
@@ -19,6 +22,10 @@ background-color:$bodyBg;
 background-size: 64px 128px;
   }
 .hola-banner--bak-container,
+.servicios-banner--bak-container,
+.proyectos-banner--bak-container,
+.blog-banner--bak-container,
+.contacto-banner--bak-container,
 .home-blog--bak-container,
 .home-services--bak-container,
 .home-banner--bak-container,
@@ -30,7 +37,12 @@ background-size: 64px 128px;
     font-size: 3em;
     color:$dark;
   }
-
+.line-left {
+    width: 50px;
+    height: 1px;
+    margin: 10px 0 25px 2px;
+    background: #2336C8;
+  }
 /*******************
 *******************
 Home-banner-section
@@ -62,16 +74,36 @@ Home-banner-section
 *******************/
 
 .home-banner--bak-container,
-.hola-banner--bak-container{
+.hola-banner--bak-container,
+.servicios-banner--bak-container,
+.proyectos-banner--bak-container,
+.blog-banner--bak-container,
+.contacto-banner--bak-container{
   background: $first;
   margin-top:0; /*Hereda el margintop de los estios reseteados*/
   padding:8em 0 10em;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
   position:relative;
   }
-  .hola-banner--bak-container{
+  .hola-banner--bak-container,
+  .servicios-banner--bak-container,
+  .proyectos-banner--bak-container,
+  .blog-banner--bak-container,
+  .contacto-banner--bak-container{
     background: #c29b00;
     padding: 4em 0 5em 0;
+    }
+  .servicios-banner--bak-container{
+    background: $blue;
+    }
+  .proyectos-banner--bak-container{
+    background: $first;
+    }
+  .blog-banner--bak-container{
+    background: #c29b00;
+    }
+  .contacto-banner--bak-container{
+    background: $blue;
     }
   .home-banner__img{
     position: absolute;
@@ -148,11 +180,11 @@ Home-srvices-section
     }
   .home-services__link,
   .single-project__link{
-    border: 1px solid red;
+    border: 1px solid $blue;
     padding:.9em .6em;
     line-height: 0;
     display: inline-block;
-    color:red;
+    color:$blue;
     font-size: .9em;
     margin-bottom: .5em;
     &:hover{
@@ -303,10 +335,58 @@ holaBanner
     border:3px dashed $first;
     }
   }
+
+/*******************
+*******************
+holaMain
+*******************
+*******************/
 .holaMain{
   margin-bottom: 2em;
   font-size: 1em;
   @include from(m){
     font-size: 1.3em;
+    line-height: 1.5em;
     }
+  }
+
+  /*******************
+  *******************
+  blogMain
+  *******************
+  *******************/
+
+  .blog--gridPost{
+    border:1px solid #dfe0e0;
+    border-radius: .25em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    background-color: #fff;
+    margin-bottom: 2em;
+    &__info{
+      padding: 0 .7em;
+      }
+    h2{
+      font-size: 1.3em;
+      margin: .2em 0;
+      color:$textGray;
+      border-bottom: 1px solid rgba($textGray, .3);
+      }
+    p{
+      font-size: 1em;
+      line-height: 1.3em;
+      }
+    a{
+      text-decoration: none;
+      }
+    .blog--gridPost__link{
+      display:inline-block;
+      border: 1px solid $first;
+      color:$first;
+      margin:.8em 0;
+      padding:.3em;
+      &:hover{
+        color:$bodyBg;
+        background: $first;
+        }
+      }
   }
