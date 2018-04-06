@@ -1,7 +1,8 @@
 extends templates/main-template.pug
 //-Variables
 append config
-  -pageTitle = 'Hola'
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Programador web en monterrey'
   -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
 //- HEADER MENU Y BANNER
 block acerca
@@ -13,9 +14,9 @@ block main
   include includes/sections/hola-banner.pug
   // End section banner
   
-  //Start section home
-  section.ed-container.hola-main
-    .ed-item.l-50.l-order-2
+  //Hola start section description
+  section.ed-container.holaMain
+    .ed-item.l-40.l-order-2.holaMain--skills
       h2 Habilidades
       ul
         li Responsive Desing / UI
@@ -24,11 +25,11 @@ block main
         li Markdown / Git / Github
         li Pug / Sass
         li Frameworks Frontend
-    .ed-item.l-50.l-order-1
-      h2 titulo
-      p Hola soy Programador y Desarrollador Web ubicado  en Mty, N.L. México, iniciando actividades formalmente desde 2012.
+    .ed-item.l-60.l-order-1.holaMain--description
+      h2 Hola que tal
+      p Soy Programador y desarrollador eeb ubicado en la ciudad de Mty, N.L. México, iniciando actividades formalmente desde 2012.
 
-      p Actualmente desarrollo y colaboro en proyectos web de manera independiente, orientado en tecnologías Frontend (Html, CSS y Javascript) y con conocimiento básico de Backend (PHP,Wordpress,MySQL).
+      p Actualmente desarrollo y colaboro en proyectos web de manera independiente, orientado en tecnologías Frontend (Html, CSS y Javascript), con conocimiento básico de Backend (PHP,Wordpress,MySQL).
 
       p Trato de  llevar un estilo de vida saludable por lo que me gusta mucho hacer ejercicio tanto en gimnasio y al aire libre como escalar o andar en bicicleta.
 
@@ -36,4 +37,4 @@ block main
 
       p ¡Saludos y en lo que te pueda ayudar no dudes en contactarme!
   
-  //end section home
+  //Hola end section description

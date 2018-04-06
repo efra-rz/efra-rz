@@ -37,15 +37,16 @@
     <header class="main-header__topbar">
       <div class="ed-container">
         <!-- Start logo-->
-        <div class="ed-item s-100 m-40 cross-center"><a href="/"><img src="img/logo-web.png" alt=""></a></div>
+        <div class="ed-item s-100 lm-40 cross-center logo-align"><a href="/"><img src="img/logo-web.png" alt=""></a></div>
         <!-- End logo-->
         <!-- Start menu-->
-        <nav class="ed-item s-100 m-60 cross-center">
+        <nav class="ed-item s-100 lm-60 cross-center">
           <!--ul.ed-menu.l-horizontal-->
           <ul class="main-menu ed-menu m-horizontal">
             <li class="main-menu__item"><a class="main-menu__link main-menu__menu-active" href="/">Home</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="/hola.html">Hola</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="/servicios.html">Servicios</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="/proyectos.html">Proyectos</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="/blog.html">Blog</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="/contacto.html">Contacto</a></li>
           </ul>
@@ -114,13 +115,11 @@
         <div class="ed-item s-100 main-center home-banner__data">
           <h1 class="section--title">Blog</h1>
         </div>
-        <div class="ed-item s-100">
-          <div class="ed-container home-main-blog-card home-banner__data">
-            <div class="ed-item s-100 m-100 l-1-3 no-padding"><img src="img/thumb-blog.jpg" alt=""></div>
-            <div class="ed-item s-100 m-100 l-2-3">
-              <h2>Primeros pasos con git</h2>
-              <p>Git es la tecnología de control de versiones desarrollada por Linus Torvalds. Comenta Torvalds que el objetivo principal git era el dar soporte a su primer gran proyecto la manutención del kernel "Linux", sin embargo hoy en día ya con mas de 20 años de su desarrollo esta herramienta parece estar más viva que nunca, teniendo un auge para poder viajar en el tiempo, crear universos alternos y gestionar nuestros archivos y proyectos.</p><a class="mainBlog__link" href="#">Seguir leyendo</a>
-            </div>
+        <div class="ed-container ed-item s-100 home-main-blog-card">
+          <div class="ed-item m-100 l-1-3 no-padding"><img src="img/thumb-blog.jpg" alt=""></div>
+          <div class="ed-item m-100 l-2-3">
+            <h2>Primeros pasos con git</h2>
+            <p>Git es la tecnología de control de versiones desarrollada por Linus Torvalds. Comenta Torvalds que el objetivo principal git era el dar soporte a su primer gran proyecto la manutención del kernel "Linux", sin embargo hoy en día ya con mas de 20 años de su desarrollo esta herramienta parece estar más viva que nunca, teniendo un auge para poder viajar en el tiempo, crear universos alternos y gestionar nuestros archivos y proyectos.</p><a class="mainBlog__link" href="#">Seguir leyendo</a>
           </div>
         </div>
       </section>
@@ -249,7 +248,7 @@
     </footer>
     <!-- End footer-->
     <!-- Scripts-->
-    <script src="js/ed-grid.js"></script>
-    <script src="js/babel/menu.js"></script>
+    <!--script(src='js/ed-grid.js')-->
+    <!--script(src='js/babel/menu.js')-->
   </body>
 </html>

@@ -44,7 +44,17 @@ Home-banner-section
       display: block;
       padding: .2em 0;
     }
-
+.logo-align{
+  @include from(m){
+    justify-content: center;
+    }
+  @include fromTo(m,lm){
+    margin-bottom: 1em;
+    }
+  @include from(lm){
+    justify-content: flex-start;
+    }
+  }
 /*******************
 *******************
 Home-banner-section
@@ -78,6 +88,9 @@ Home-banner-section
       font-size: 3em;
       text-align: center;
       color:#fff;
+      @media screen and (max-width: 640px) {
+        font-size: 2em;
+        }
       }
     }
   .hola-banner__data{
@@ -160,6 +173,7 @@ Home-srvices-section
   position: relative;
   }
 .home-main-blog-card{
+  position: relative;
   background-color: #fff;
   font-size: $blog-text;
   h2{
@@ -178,9 +192,11 @@ Home-srvices-section
     }
   }
 .mainBlog__link{
+  display:inline-block;
   color:$first;
   padding:.5em;
   border: 1px solid $first;
+  margin:.5em 0;
   &:hover{
     color:#fff;
     background-color: $first;
@@ -239,18 +255,20 @@ Home-footer-section
   list-style-type: none;
   padding:0;
   li{
-    margin-bottom: .3em;
+    // margin-bottom: .3em;
     }
   a{
     font-size: .9em;
+    padding:.5em 0;
     display: block;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 0.2s;
 
     &:hover{
       background-color: $borderBg;
       color:$first;
-      padding-left:.5em;
+      padding-left:.9em;
       }
     }
   }
@@ -274,3 +292,21 @@ Home-footer-section
   font-size: .9em;
   color: #999;
 }
+
+/*******************
+*******************
+holaBanner
+*******************
+*******************/
+.holaBanner{
+  img{
+    border:3px dashed $first;
+    }
+  }
+.holaMain{
+  margin-bottom: 2em;
+  font-size: 1em;
+  @include from(m){
+    font-size: 1.3em;
+    }
+  }
