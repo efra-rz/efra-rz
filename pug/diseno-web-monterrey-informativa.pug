@@ -1,0 +1,71 @@
+extends templates/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block servicios
+  li.main-menu__item: a(href='/servicios.html').main-menu__link.main-menu__menu-active Servicios
+//- CONTENIDO
+block main
+  // Start section banner
+  .servicios-banner--bak-container
+    img(src="img/home-banner.jpg", alt="").home-banner__img
+    section.ed-container
+      .ed-item.s-100.l-60.to-center
+        .hola-banner__data
+          h1 Web Informativa
+          span  Servicios
+  // End section banner
+  //Servicios start section description
+  .ed-container.servicioIndividual.mb-2
+    .ed-item.m-50
+      img(src="img/homeServicios__2.jpg", alt="")
+    .ed-item.m-50
+      h1 Web informativa
+      h2 Precio 
+        span desde 
+        | $5000.00 MXN
+      p 
+        span Una detallada presentación de tu empresa convertirá tu web en una potente herramienta de ventas. 
+        |  Una web informativa te ayudará a brindar toda la información que tus clientes necesitan acerca de tu empresa. Con un diseño adaptable para cualquier dispositivo móvil o de escritorio siempre estarás disponible en cualquier lugar y hora.
+
+      p A la fecha, toda empresa debe asegurarse tener una excelente presencia en la web. La Web informativa te ayudará a educar a tu cliente sobre tus servicos mostrandole toda la información que ellos necesitan. ¡Has que tu web se convierta en un potente aliado en ventas!
+
+      a(href="contacto.html").boton ¡Contacta ya!
+      h2 Incluye:
+      ul.servicioIndividual__features
+        li Diseño adaptable a dispositivos móviles
+        li Hosting y Dominio.com por 1 año
+        li Chat en línea directo de la web
+        li Web Optimizada para SEO
+        li Navegación a diferentes páginas del sitio (por default 5 ejemplo: inicio, nosotros, servicios, productos, contacto)
+        li Formulario de contacto
+        li 3 Cuentas de correo electrónico personalizadas
+        li Tiempo de entrega: 10 a 15 días
+  .ejemplosWeb--bck
+    .ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Ejemplos
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://senssthetic.com" target="_blank"): img(src='img/project-senssthetic.jpg', alt='')
+          .ed-item.s-100
+            h2 Senssthetic
+          .ed-item.s-100
+            a(href="http://senssthetic.com" target="_blank").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://senssthetic.com" target="_blank"): img(src='img/project-arxav.jpg', alt='')
+          .ed-item.s-100
+            h2 Arxav
+          .ed-item.s-100
+            a(href="http://senssthetic.com" target="_blank").single-project__link Ver proyecto
+            
+  //Servicios end section description

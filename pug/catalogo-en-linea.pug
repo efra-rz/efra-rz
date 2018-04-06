@@ -1,0 +1,74 @@
+extends templates/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block servicios
+  li.main-menu__item: a(href='/servicios.html').main-menu__link.main-menu__menu-active Servicios
+//- CONTENIDO
+block main
+  // Start section banner
+  .servicios-banner--bak-container
+    img(src="img/home-banner.jpg", alt="").home-banner__img
+    section.ed-container
+      .ed-item.s-100.l-60.to-center
+        .hola-banner__data
+          h1 Catálogo en línea
+          span  Servicios
+  // End section banner
+  //Servicios start section description
+  .ed-container.servicioIndividual.mb-2
+    .ed-item.m-50
+      img(src="img/homeServicios__4.jpg", alt="")
+    .ed-item.m-50
+      h1 Catálogo en línea
+      h2 Precio 
+        span desde 
+        | $9000.00 MXN
+      p 
+        span Comparte tu catálogo de productos para facilitar el proceso de cotización a tus clientes. 
+        | Con una página auto-administrable podrás actualizar la información de todos tus productos y servicios. Gracias a su diseño responsivo estarás siempre al alcance de tus clientes desde cualquier dispositivo, como tablets o smartphones.
+
+      p ¡Tu mejor opción si quieres una optima exposición de tus productos!
+
+      a(href="contacto.html").boton ¡Contacta ya!
+      h2 Incluye:
+      ul.servicioIndividual__features
+      li Diseño adaptable a dispositivos móviles
+      li Hosting y Dominio.com por 1 año
+      li Chat en línea directo de la web
+      li Web Optimizada para SEO
+      li Catálogo en línea hasta 200 productos dividos en categorías
+      li Incluye un CMS (Gestor de manejo de contenido)
+      li Hasta 8 Secciones principales
+      li Hasta 10 secciones interiores nivel 2
+      li Formulario de contacto
+      li 5 Cuentas de correo electrónico personalizadas
+      li Tiempo de entrega: 15 a 20 días
+  .ejemplosWeb--bck
+    .ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Ejemplos
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://www.diamondstone.com.mx/" target="_blank"): img(src='img/project-diamondstone.jpg', alt='')
+          .ed-item.s-100
+            h2 Diamond Stone
+          .ed-item.s-100
+            a(href="http://www.diamondstone.com.mx/" target="_blank").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://gensteel.com.mx" target="_blank"): img(src='img/project-gensteel.jpg', alt='')
+          .ed-item.s-100
+            h2 Gensteel
+          .ed-item.s-100
+            a(href="http://gensteel.com.mx" target="_blank").single-project__link Ver proyecto
+            
+  //Servicios end section description

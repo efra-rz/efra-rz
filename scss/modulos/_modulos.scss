@@ -36,6 +36,9 @@ background-size: 64px 128px;
 .section--title{
     font-size: 3em;
     color:$dark;
+    &__white{
+    color:$bodyBg;
+    }
   }
 .line-left {
     width: 50px;
@@ -48,6 +51,17 @@ background-size: 64px 128px;
   }
 .mb-4{
   margin-bottom:4em;
+  }
+.boton{
+  display: inline-block;
+  color:$bodyBg;
+  background-color: $blue;
+  padding: .7em;
+  font-weight: 600;
+  border-radius: 1em;
+  }
+a.boton{
+  text-decoration: none;
   }
 /*******************
 *******************
@@ -396,7 +410,63 @@ holaMain
         }
       }
   }
-
+  .post{
+    font-size:1.3em;
+    img{
+      display: block;
+      margin:auto;
+      width:100%;
+      }
+    &Title{
+      &__left{text-align: left;}
+      &__center{text-align: center;}
+      &__right{text-align: right;}
+      }
+    p{
+      line-height: 1.5em;
+      }
+    }
+/*******************
+*******************
+serivicioIndividualMain
+*******************
+*******************/
+.servicioIndividual{
+  h1{
+    margin-top: 0;
+    }
+  h2{
+    span{
+      font-size: .7em;
+      font-weight: 400;
+      }
+    }
+  p{
+    line-height: 1.5em;
+    font-size: 1.1em;
+    span{
+      font-weight: 700;
+      }
+    }
+  &__features{
+    list-style-type: none;
+    padding: 0;
+    li{
+      font-size: 1.1em;
+      padding-left: 1.5em;
+      background-color: #fff;
+      background-image: url(../img/star.svg);
+      background-repeat: no-repeat;
+      // background-position: center;
+      background-size: 18px;
+      margin-bottom: .5em;
+      }
+    }
+  }
+.ejemplosWeb--bck{
+  background-color: $borderBg;
+  padding:.5em 0 2em;
+  }
 /*******************
 *******************
 contactMain
