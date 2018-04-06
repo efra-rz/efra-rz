@@ -1,12 +1,19 @@
 block config
   include ../config/config.pug
 doctype html
-html(lang='es')
+html(lang='es' prefix="og: http://ogp.me/ns#")
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     meta(name='description' content=pageDescription)
+    //openGraph
+    meta(property="og:site_name" content="Efra Rz" )
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="Efra Rz - Programador web en Monterrey")
+    meta(property="og:description" content="Programación y desarrollo de páginas de internet para PyME.")
+    meta(property="og:image" content="http://efra-rz.com/img/og-main.jpg")
+    
     title #{pageTitle} | #{empresaTitle}
     link(rel='stylesheet', href='css/style.css')
     // Start of Zendesk Chat Script
