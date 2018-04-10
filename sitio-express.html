@@ -11,7 +11,7 @@
     <meta property="og:title" content="Efra Rz - Programador web en Monterrey">
     <meta property="og:description" content="Programación y desarrollo de páginas de internet para PyME.">
     <meta property="og:image" content="http://efra-rz.com/img/og-main.jpg">
-    <title>Efra Rz | Programador web en monterrey</title>
+    <title>Efra Rz | Desarrollo web en monterrey</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Start of Zendesk Chat Script-->
     <script type="text/javascript">
@@ -50,8 +50,8 @@
           <!--ul.ed-menu.l-horizontal-->
           <ul class="main-menu ed-menu m-horizontal">
             <li class="main-menu__item"><a class="main-menu__link" href="/">Inicio</a></li>
-            <li class="main-menu__item"><a class="main-menu__link main-menu__menu-active" href="/hola.html">Hola</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="/servicios.html">Servicios</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="/hola.html">Hola</a></li>
+            <li class="main-menu__item"><a class="main-menu__link main-menu__menu-active" href="/servicios.html">Servicios</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="/proyectos.html">Proyectos</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="/blog.html">Blog</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="/contacto.html">Contacto</a></li>
@@ -64,41 +64,60 @@
     <!--*Start main content*-->
     <!--********************-->
     <!-- Start section banner-->
-    <div class="hola-banner--bak-container"><img class="home-banner__img" src="img/home-banner.jpg" alt="">
-      <section class="ed-container holaBanner">
+    <div class="servicios-banner--bak-container"><img class="home-banner__img" src="img/home-banner.jpg" alt="">
+      <section class="ed-container">
         <div class="ed-item s-100 l-60 to-center">
-          <div class="hola-banner__data"><img class="to-center" src="img/profile.jpg" alt="" width="150px">
-            <h1>Mi objetivo es hacer crecer tu empresa</h1><span> Efra Rz</span>
+          <div class="hola-banner__data">
+            <h1>Sitio Express</h1><span> Servicios</span>
           </div>
         </div>
       </section>
     </div>
     <!-- End section banner-->
-    <!--Hola start section description-->
-    <section class="ed-container holaMain">
-      <div class="ed-item l-40 l-order-2 holaMain--skills">
-        <h2>Habilidades</h2>
-        <ul>
-          <li>Responsive Desing / UI</li>
-          <li>HTML / CSS / Javascript</li>
-          <li>PHP / MySQL / Wordpress</li>
-          <li>Markdown / Git / Github</li>
-          <li>Pug / Sass</li>
-          <li>Frameworks Frontend</li>
-          <li>Paquetería de Diseño Gráfico</li>
-          <li>Creación de logotopios</li>
+    <!--Servicios start section description-->
+    <div class="ed-container servicioIndividual mb-2">
+      <div class="ed-item m-50"><img src="img/homeServicios__5.jpg" alt=""></div>
+      <div class="ed-item m-50">
+        <h1>Sitio express</h1>
+        <h2>Precio <span>desde </span>$1800.00 MXN</h2>
+        <p> <span>Digitaliza tu empresa con un sitio web personalizado. </span>Tu sitio express tipo landing page es una excelente opción si lo que buscas es emprender tu negocio con la más mínima inversión. Con un diseño adaptable para cualquier dispositivo móvil o de escritorio siempre estarás disponible en cualquier lugar y hora.</p>
+        <p>Tu sitio express te ayudará a brindar la información básica que tus clientes necesitan acerca de tu empresa. ¡Considera ésta tu mejor opción si estas emprendiendo tu negocio!</p><a class="boton" href="contacto.html">¡Contacta ya!</a>
+        <h2>Incluye:</h2>
+        <ul class="servicioIndividual__features">
+          <li>Hosting y Dominio.com por 1 año</li>
+          <li>Formulario de contacto</li>
+          <li>Diseño basado en plantill adaptable a dispositivos móviles</li>
+          <li>Cuenta de correo electrónico personalizada</li>
+          <li>Tiempo de entrega: 3 a 5 días</li>
         </ul>
       </div>
-      <div class="ed-item l-60 l-order-1 holaMain--description">
-        <h2>Hola</h2>
-        <p>Soy Efraín Rmz. Rdz. y mi objetivo es hacer crecer tu marca a travéz de un excelente diseño y una correcta programación web, resido en la ciudad de Mty, N.L. México, e inicio actividades formalmente desde 2012.</p>
-        <p>Actualmente desarrollo y colaboro en proyectos web de manera independiente, orientado en tecnologías Frontend (Html, CSS y Javascript), con conocimientos básicos en tecnologías de Backend (PHP,Wordpress,MySQL).</p>
-        <p>Además del diseño y la programación trato  de llevar un estilo de vida saludable, me agrada hacer ejercicio tanto en gimnasio como al aire libre y me gusta mucho andar en bicicleta.</p>
-        <p>En el 2017 cambié mis habitos alimenticios y aunque no me considero vegetariano llevo la mayor parte del tiempo una dieta libre de alimentos procesados y de origen animal, lo que me ha ayudado a mejorar mi rendimiento físico y mental.</p>
-        <p>¡Saludos y en lo que te pueda ayudar no dudes en contactarme!</p>
-      </div>
-    </section>
-    <!--Hola end section description-->
+    </div>
+    <!--.ejemplosWeb--bck
+    .ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Ejemplos
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://karlavelver.com" target="_blank"): img(src='img/project-karlavelver.jpg', alt='')
+          .ed-item.s-100
+            h2 Karla Velver
+          .ed-item.s-100
+            a(href="http://karlavelver.com" target="_blank").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://odontologiainvisible.com/" target="_blank"): img(src='img/project-odinv.jpg', alt='')
+          .ed-item.s-100
+            h2 Odontología Invisible
+          .ed-item.s-100
+            a(href="http://odontologiainvisible.com/" target="_blank").single-project__link Ver proyecto
+    
+    -->
+    <!--Servicios end section description-->
     <!--*******************-->
     <!--****End content****-->
     <!--*******************-->
