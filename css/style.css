@@ -2976,7 +2976,12 @@ General-styles
 body {
   font-family: lato;
   color: #53575A; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
     font-family: Open Sans; }
   body a {
     -webkit-transition: all 0.2s;
@@ -3030,6 +3035,12 @@ body {
 a.boton {
   text-decoration: none; }
 
+.breadcrumLink {
+  color: rgba(249, 248, 249, 0.7); }
+  .breadcrumLink:hover {
+    text-decoration: none;
+    color: #f9f8f9; }
+
 /*******************
 *******************
 Home-banner-section
@@ -3038,10 +3049,9 @@ Home-banner-section
 .main-header__topbar {
   background-color: #333;
   padding: .5em 0; }
-
-.main-header__topbar img {
-  display: block;
-  padding: .2em 0; }
+  .main-header__topbar img {
+    display: block;
+    padding: .2em 0; }
 
 @media screen and (min-width: 640px) {
   .logo-align {
@@ -3122,7 +3132,8 @@ Home-banner-section
   position: relative; }
   .hola-banner__data img {
     border-radius: 50%; }
-  .hola-banner__data h1, .hola-banner__data span {
+  .hola-banner__data h1,
+  .hola-banner__data span {
     font-size: 3em;
     text-align: center;
     color: #fff;
@@ -3246,7 +3257,8 @@ Home-footer-section
   padding-top: 2em;
   background-color: #333;
   color: #fcfcfc; }
-  .main-footer--bak-container h1, .main-footer--bak-container h2 {
+  .main-footer--bak-container h1,
+  .main-footer--bak-container h2 {
     color: #fcfcfc;
     padding-bottom: .5em;
     border-bottom: 1px solid rgba(231, 225, 231, 0.6);

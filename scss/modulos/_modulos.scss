@@ -3,24 +3,31 @@
 General-styles
 *******************
 *******************/
+
 body{
   font-family: lato;
   color:$textGray;
-  h1,h2,h3,h4,h5,h6{
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
     font-family: Open Sans;
-    }
+  }
+
   a{
     transition: all 0.2s;
-    }
   }
+}
+
 .bodyBg{
-  // background-color: $bodyBg;
-  background:
-linear-gradient(135deg, $bodyBg 22px, $borderBg 22px, $borderBg 24px, transparent 24px, transparent 67px, $borderBg 67px, $borderBg 69px, transparent 69px),
-linear-gradient(225deg, $bodyBg 22px, $borderBg 22px, $borderBg 24px, transparent 24px, transparent 67px, $borderBg 67px, $borderBg 69px, transparent 69px)0 64px;
-background-color:$bodyBg;
-background-size: 64px 128px;
-  }
+  background: linear-gradient(135deg, $bodyBg 22px, $borderBg 22px, $borderBg 24px, transparent 24px, transparent 67px, $borderBg 67px, $borderBg 69px, transparent 69px), linear-gradient(225deg, $bodyBg 22px, $borderBg 22px, $borderBg 24px, transparent 24px, transparent 67px, $borderBg 67px, $borderBg 69px, transparent 69px)0 64px;
+  background-color:$bodyBg;
+  background-size: 64px 128px;
+}
+
 .hola-banner--bak-container,
 .servicios-banner--bak-container,
 .proyectos-banner--bak-container,
@@ -34,24 +41,29 @@ background-size: 64px 128px;
 }
 
 .section--title{
-    font-size: 3em;
-    color:$dark;
-    &__white{
+  font-size: 3em;
+  color:$dark;
+
+  &__white{
     color:$bodyBg;
-    }
   }
+}
+
 .line-left {
-    width: 50px;
-    height: 1px;
-    margin: 10px 0 25px 2px;
-    background: #2336C8;
-  }
+  width: 50px;
+  height: 1px;
+  margin: 10px 0 25px 2px;
+  background: #2336C8;
+}
+
 .mb-2{
   margin-bottom:2em;
-  }
+}
+
 .mb-4{
   margin-bottom:4em;
-  }
+}
+
 .boton{
   display: inline-block;
   color:$bodyBg;
@@ -59,34 +71,52 @@ background-size: 64px 128px;
   padding: .7em;
   font-weight: 600;
   border-radius: 1em;
-  }
+}
+
 a.boton{
   text-decoration: none;
+}
+
+.breadcrumLink{
+  color:rgba($bodyBg,.7);
+
+  &:hover{
+    text-decoration: none;
+    color:rgba($bodyBg, 1);
   }
+}
+
 /*******************
 *******************
 Home-banner-section
 *******************
 *******************/
+
 .main-header__topbar{
   background-color: #333;
   padding: .5em 0;
+
+  img{
+    display: block;
+    padding: .2em 0;
   }
-  .main-header__topbar img{
-      display: block;
-      padding: .2em 0;
-    }
+}
+
 .logo-align{
+
   @include from(m){
     justify-content: center;
-    }
+  }
+
   @include fromTo(m,lm){
     margin-bottom: 1em;
-    }
+  }
+
   @include from(lm){
     justify-content: flex-start;
-    }
   }
+}
+
 /*******************
 *******************
 Home-banner-section
@@ -104,64 +134,78 @@ Home-banner-section
   padding:8em 0 10em;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
   position:relative;
-  }
-  .hola-banner--bak-container,
-  .servicios-banner--bak-container,
-  .proyectos-banner--bak-container,
-  .blog-banner--bak-container,
-  .contacto-banner--bak-container{
-    background: #c29b00;
-    padding: 4em 0 5em 0;
-    }
-  .servicios-banner--bak-container{
-    background: $blue;
-    }
-  .proyectos-banner--bak-container{
-    background: $first;
-    }
-  .blog-banner--bak-container{
-    background: #c29b00;
-    }
-  .contacto-banner--bak-container{
-    background: $blue;
-    }
-  .home-banner__img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    opacity: 0.3;
-    }
-  .home-banner__data{
-    position: relative;
-    h1{
-      font-size: 3em;
-      text-align: center;
-      color:#fff;
-      @media screen and (max-width: 640px) {
-        font-size: 2em;
-        }
-      }
-    }
-  .hola-banner__data{
-    position: relative;
-    img{
-      border-radius: 50%;
-      }
-    h1, span{
-      font-size: 3em;
-      text-align: center;
-      color:#fff;
-      margin-bottom:.3em;
-    }
-    span{
+}
+
+.hola-banner--bak-container,
+.servicios-banner--bak-container,
+.proyectos-banner--bak-container,
+.blog-banner--bak-container,
+.contacto-banner--bak-container{
+  background: #c29b00;
+  padding: 4em 0 5em 0;
+}
+
+.servicios-banner--bak-container{
+  background: $blue;
+}
+
+.proyectos-banner--bak-container{
+  background: $first;
+}
+
+.blog-banner--bak-container{
+  background: #c29b00;
+}
+
+.contacto-banner--bak-container{
+  background: $blue;
+}
+
+.home-banner__img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.home-banner__data{
+  position: relative;
+
+  h1{
+    font-size: 3em;
+    text-align: center;
+    color:#fff;
+
+    @media screen and (max-width: 640px) {
       font-size: 2em;
-      text-align: center;
-      display: block;
     }
   }
+}
+
+.hola-banner__data{
+  position: relative;
+
+  img{
+    border-radius: 50%;
+  }
+
+  h1,
+  span{
+    font-size: 3em;
+    text-align: center;
+    color:#fff;
+    margin-bottom:.3em;
+  }
+
+span{
+    font-size: 2em;
+    text-align: center;
+    display: block;
+  }
+}
 
 /*******************
 *******************
@@ -176,41 +220,49 @@ Home-srvices-section
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background-color: #fff;
   margin-bottom: 1em;
-  }
+}
+
 .home-services--img{
   display: block;
   border-radius: .25em .25em 0 0;
-  }
+}
+
 .home-services--single-service__info{
   padding: .7em;
+
   h2{
     font-size: 1.3em;
     margin-top: 0;
-    }
+  }
+
   p{
     font-size: 1em;
     color:$textGray;
-    }
+  }
+
   a{
     text-decoration:none;
-    }
   }
-  .homeServices__title{
-    color:$first;
-    }
-  .home-services__link,
-  .single-project__link{
-    border: 1px solid $blue;
-    padding:.9em .6em;
-    line-height: 0;
-    display: inline-block;
-    color:$blue;
-    font-size: .9em;
-    margin-bottom: .5em;
-    &:hover{
-      text-decoration: underline;
-      }
-    }
+}
+
+.homeServices__title{
+  color:$first;
+}
+
+.home-services__link,
+.single-project__link{
+  border: 1px solid $blue;
+  padding:.9em .6em;
+  line-height: 0;
+  display: inline-block;
+  color:$blue;
+  font-size: .9em;
+  margin-bottom: .5em;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
 
   /*******************
   *******************
@@ -223,37 +275,44 @@ Home-srvices-section
   padding: 2em 0 8em 0;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
   position: relative;
-  }
+}
+
 .home-main-blog-card{
   position: relative;
   background-color: #fff;
   font-size: $blog-text;
+
   h2{
     padding-bottom: .3em;
     border-bottom: 1px solid rgba($textGray, .3);
-    }
+  }
+
   img{
     display: block
-    }
+  }
+
   p{
     line-height: 1.5em;
-    }
+  }
+
   a{
     text-decoration: none;
     font-size: .9em;
-    }
   }
+}
+
 .mainBlog__link{
   display:inline-block;
   color:$first;
   padding:.5em;
   border: 1px solid $first;
   margin:.5em 0;
+
   &:hover{
     color:#fff;
     background-color: $first;
-    }
   }
+}
 
 /*******************
 *******************
@@ -267,48 +326,58 @@ Home-projects-section
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background-color: #fff;
   margin-bottom: 2em;
+
   h2{
     font-size: 1.3em;
     margin: .2em 0;
     color:$textGray;
     border-bottom: 1px solid rgba($textGray, .3);
-    }
+  }
 }
-  .single-project__link{
-    border: 1px solid $first;
-    color:$first;
-    margin:.8em 0;
-    }
+
+.single-project__link{
+  border: 1px solid $first;
+  color:$first;
+  margin:.8em 0;
+}
 
 /*******************
 *******************
 Home-footer-section
 *******************
 *******************/
+
 .main-footer--bak-container{
   padding-top: 2em;
   background-color: #333;
   color:#fcfcfc;
-  h1, h2{
-    color:#fcfcfc;
-    padding-bottom: .5em;
-    border-bottom:1px solid $borderBg;
-    text-transform: uppercase;
-    }
+
+  h1,
+  h2{
+  color:#fcfcfc;
+  padding-bottom: .5em;
+  border-bottom:1px solid $borderBg;
+  text-transform: uppercase;
   }
-  .main-footer--bak-container a{
-    color:#fcfcfc;
-    }
+}
+
+.main-footer--bak-container a{
+  color:#fcfcfc;
+}
+
 .footer-description{
   line-height: 1.5em;
-  }
+}
+
 .footer-enlaces,
 .footer-blog{
   list-style-type: none;
   padding:0;
+
   li{
     // margin-bottom: .3em;
-    }
+  }
+
   a{
     font-size: .9em;
     padding:.5em 0;
@@ -321,23 +390,27 @@ Home-footer-section
       background-color: $borderBg;
       color:$first;
       padding-left:.9em;
-      }
     }
   }
+}
+
 .footer__social-icons{
   list-style-type: none;
   padding: 0;
   margin:1.3em 0 2em;
+
   li{
     display:inline-block;
     margin-left: .2em;
-    }
   }
+}
+
 .footer-bottom{
   background-color: #222;
   padding: 1em 0;
   margin-top:2em;
 }
+
 .footer-bottom p{
   margin: 0;
   text-align: center;
@@ -350,25 +423,28 @@ Home-footer-section
 holaBanner
 *******************
 *******************/
+
 .holaBanner{
   img{
     border:3px dashed $first;
-    }
   }
+}
 
 /*******************
 *******************
 holaMain
 *******************
 *******************/
+
 .holaMain{
   margin-bottom: 2em;
   font-size: 1em;
+
   @include from(m){
     font-size: 1.3em;
     line-height: 1.5em;
-    }
   }
+}
 
   /*******************
   *******************
@@ -376,81 +452,99 @@ holaMain
   *******************
   *******************/
 
-  .blog--gridPost{
-    border:1px solid #dfe0e0;
-    border-radius: .25em;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-    background-color: #fff;
-    margin-bottom: 2em;
-    &__info{
-      padding: 0 .7em;
-      }
-    h2{
-      font-size: 1.3em;
-      margin: .2em 0;
-      color:$textGray;
-      border-bottom: 1px solid rgba($textGray, .3);
-      }
-    p{
-      font-size: 1em;
-      line-height: 1.3em;
-      }
-    a{
-      text-decoration: none;
-      }
-    .blog--gridPost__link{
-      display:inline-block;
-      border: 1px solid $first;
-      color:$first;
-      margin:.8em 0;
-      padding:.3em;
-      &:hover{
-        color:$bodyBg;
-        background: $first;
-        }
-      }
+.blog--gridPost{
+  border:1px solid #dfe0e0;
+  border-radius: .25em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  background-color: #fff;
+  margin-bottom: 2em;
+
+  &__info{
+    padding: 0 .7em;
   }
-  .post{
-    font-size:1.3em;
-    img{
-      display: block;
-      margin:auto;
-      width:100%;
-      }
-    &Title{
-      &__left{text-align: left;}
-      &__center{text-align: center;}
-      &__right{text-align: right;}
-      }
-    p{
-      line-height: 1.5em;
-      }
+
+  h2{
+    font-size: 1.3em;
+    margin: .2em 0;
+    color:$textGray;
+    border-bottom: 1px solid rgba($textGray, .3);
+  }
+
+  p{
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .blog--gridPost__link{
+    display:inline-block;
+    border: 1px solid $first;
+    color:$first;
+    margin:.8em 0;
+    padding:.3em;
+
+    &:hover{
+      color:$bodyBg;
+      background: $first;
     }
+  }
+}
+
+.post{
+  font-size:1.3em;
+
+  img{
+    display: block;
+    margin:auto;
+    width:100%;
+  }
+
+  &Title{
+    &__left{text-align: left;}
+    &__center{text-align: center;}
+    &__right{text-align: right;}
+  }
+
+  p{
+    line-height: 1.5em;
+  }
+}
+
 /*******************
 *******************
 serivicioIndividualMain
 *******************
 *******************/
+
 .servicioIndividual{
+
   h1{
     margin-top: 0;
     }
+
   h2{
+
     span{
       font-size: .7em;
       font-weight: 400;
-      }
     }
+  }
+
   p{
     line-height: 1.5em;
     font-size: 1.1em;
     span{
       font-weight: 700;
-      }
     }
+  }
+
   &__features{
     list-style-type: none;
     padding: 0;
+
     li{
       font-size: 1.1em;
       padding-left: 1.5em;
@@ -460,18 +554,21 @@ serivicioIndividualMain
       // background-position: center;
       background-size: 18px;
       margin-bottom: .5em;
-      }
     }
   }
+}
+
 .ejemplosWeb--bck{
   background-color: $borderBg;
   padding:.5em 0 2em;
-  }
+}
+
 /*******************
 *******************
 contactMain
 *******************
 *******************/
+
 .box {
   background: #3597db;
   padding: 30px 20px;
@@ -479,18 +576,21 @@ contactMain
   border-radius: 4px;
   color: #fff;
   transition: all 0.2s;
+
   a{
     color:#fff;
     text-decoration: none;
     }
+
   &:hover{
     background-color: $first;
   }
 }
+
 .form-box {
-    padding: 35px 20px;
-    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
-    background: #fff;
-    border-radius: 4px;
-    margin-bottom: 4em;
-  }
+  padding: 35px 20px;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 4em;
+}
