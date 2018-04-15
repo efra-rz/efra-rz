@@ -8,7 +8,7 @@ Completar los siguientes puntos para llegar a la versión v.1.0.2
 
 ### Refactorización de archivos Pug
 - [ ]  Implementar estructura de EDgrid Styleguides en [Github](https://github.com/escueladigital/EDteam-StyleGuides/tree/master/dev)
-- [ ]  Agregar a .gitignore los HTML de la raíz del proyecto y carpeta CSS
+- [x]  Agregar a .gitignore los HTML de la raíz del proyecto y carpeta CSS
 
 ### Crear página de vista previa del proyecto (Rama project)
 - [ ]  Establecer estilos de página

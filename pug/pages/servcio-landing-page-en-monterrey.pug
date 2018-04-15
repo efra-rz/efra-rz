@@ -1,4 +1,4 @@
-extends templates/main-template.pug
+extends ../includes/main-template.pug
 //-Variables
 append config
   -pageTitle = 'Efra Rz'
@@ -15,38 +15,32 @@ block main
     section.ed-container
       .ed-item.s-100.l-60.to-center
         .hola-banner__data
-          h1 Catálogo en línea
+          h1 Desarrollo de Landing Page
           span  Servicios
   // End section banner
   //Servicios start section description
   .ed-container.servicioIndividual.mb-2
     .ed-item.m-50
-      img(src="img/homeServicios__4.jpg", alt="")
+      img(src="img/homeServicios__1.jpg", alt="")
     .ed-item.m-50
-      h1 Catálogo en línea
+      h1 Landing Page
       h2 Precio 
         span desde 
-        | $9000.00 MXN
+        | $3500.00 MXN
       p 
-        span Comparte tu catálogo de productos para facilitar el proceso de cotización a tus clientes. 
-        | Con una página auto-administrable podrás actualizar la información de todos tus productos y servicios. Gracias a su diseño responsivo estarás siempre al alcance de tus clientes desde cualquier dispositivo, como tablets o smartphones.
+        span Digitaliza tu empresa con un sitio web personalizado. 
+        | Una landing page es una excelente opción si lo que buscas es emprender tu negocio y no dispones de mucho capital para hacer una fuerte inversión. Con un diseño adaptable para cualquier dispositivo móvil o de escritorio siempre estarás disponible en cualquier lugar y hora.
 
-      p ¡Tu mejor opción si quieres una optima exposición de tus productos!
-
+      p A la fecha, toda empresa debe asegurarse tener una excelente presencia en la web. Una landing page te ayudará a brindar la información básica que tus clientes necesitan acerca de tu empresa. ¡Considera ésta tu mejor opción si estas emprendiendo tu negocio!
       a(href="contacto.html").boton ¡Contacta ya!
       h2 Incluye:
       ul.servicioIndividual__features
-        li Diseño adaptable a dispositivos móviles
         li Hosting y Dominio.com por 1 año
         li Chat en línea directo de la web
-        li Web Optimizada para SEO
-        li Catálogo en línea hasta 200 productos dividos en categorías
-        li Incluye un CMS (Gestor de manejo de contenido)
-        li Hasta 8 Secciones principales
-        li Hasta 10 secciones interiores nivel 2
         li Formulario de contacto
-        li 5 Cuentas de correo electrónico personalizadas
-        li Tiempo de entrega: 15 a 20 días
+        li Diseño adaptable a dispositivos móviles
+        li Cuenta de correo electrónico personalizada
+        li Tiempo de entrega: 5 a 10 días
   .ejemplosWeb--bck
     .ed-container
       .ed-item.s-100.main-center
@@ -56,19 +50,19 @@ block main
       .ed-item.s-100.m-50
         .home-projects--single-project.ed-container
           .ed-item.s-100.no-padding
-            a(href="http://www.diamondstone.com.mx/" target="_blank"): img(src='img/project-diamondstone.jpg', alt='')
+            a(href="http://karlavelver.com" target="_blank"): img(src='img/project-karlavelver.jpg', alt='')
           .ed-item.s-100
-            h2 Diamond Stone
+            h2 Karla Velver
           .ed-item.s-100
-            a(href="http://www.diamondstone.com.mx/" target="_blank").single-project__link Ver proyecto
+            a(href="http://karlavelver.com" target="_blank").single-project__link Ver proyecto
       //Proyecto
       .ed-item.s-100.m-50
         .home-projects--single-project.ed-container
           .ed-item.s-100.no-padding
-            a(href="http://gensteel.com.mx" target="_blank"): img(src='img/project-gensteel.jpg', alt='')
+            a(href="http://odontologiainvisible.com/" target="_blank"): img(src='img/project-odinv.jpg', alt='')
           .ed-item.s-100
-            h2 Gensteel
+            h2 Odontología Invisible
           .ed-item.s-100
-            a(href="http://gensteel.com.mx" target="_blank").single-project__link Ver proyecto
-            
+            a(href="http://odontologiainvisible.com/" target="_blank").single-project__link Ver proyecto
+
   //Servicios end section description

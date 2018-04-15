@@ -1,4 +1,4 @@
-extends templates/main-template.pug
+extends ../includes/main-template.pug
 //-Variables
 append config
   -pageTitle = 'Efra Rz'
@@ -10,7 +10,7 @@ block blog
 //- CONTENIDO
 block main
   // Start section banner
-  include includes/sections/blog-banner.pug
+  include ../includes/sections/blog-banner.pug
   // End section banner
   // Entradas blog start
   .home-projects--back-container

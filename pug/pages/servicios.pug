@@ -1,4 +1,4 @@
-extends templates/main-template.pug
+extends ../includes/main-template.pug
 //-Variables
 append config
   -pageTitle = 'Efra Rz'
@@ -10,8 +10,8 @@ block servicios
 //- CONTENIDO
 block main
   // Start section banner
-  include includes/sections/servicios-banner.pug
+  include ../includes/sections/servicios-banner.pug
   // End section banner
   //Servicios start section description
-  include includes/sections/home-services.pug
+  include ../includes/sections/home-services.pug
   //Servicios end section description

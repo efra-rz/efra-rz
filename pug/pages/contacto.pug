@@ -1,4 +1,4 @@
-extends templates/main-template.pug
+extends ../includes/main-template.pug
 //-Variables
 append config
   -pageTitle = 'Efra Rz'
@@ -10,7 +10,7 @@ block contacto
 //- CONTENIDO
 block main
   // Start section banner
-  include includes/sections/contacto-banner.pug
+  include ../includes/sections/contacto-banner.pug
   // End section banner
   .ed-container.mb-2
     .ed-item.m-1-3

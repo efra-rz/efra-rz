@@ -1,0 +1,63 @@
+extends ../includes/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block servicios
+  li.main-menu__item: a(href='/servicios.html').main-menu__link.main-menu__menu-active Servicios
+//- CONTENIDO
+block main
+  // Start section banner
+  .servicios-banner--bak-container
+    img(src="img/home-banner.jpg", alt="").home-banner__img
+    section.ed-container
+      .ed-item.s-100.l-60.to-center
+        .hola-banner__data
+          h1 Web corporativa dináminca
+          span  Servicios
+  // End section banner
+  //Servicios start section description
+  .ed-container.servicioIndividual.mb-2
+    .ed-item.m-50
+      img(src="img/homeServicios__3.jpg", alt="")
+    .ed-item.m-50
+      h1 Web corporativa dinámica
+      h2 Precio 
+        span desde 
+        | $7000.00 MXN
+      p 
+        span Una robusta opción si tu sitio web necesita estar en constante actualización. 
+        | Recuerda que tener un sitio siempre actualizado y al día hace que tus clientes regresen, además de ayudar a generar nuevos. Con un diseño adaptable para cualquier dispositivo móvil o de escritorio siempre estarás disponible en cualquier lugar y hora.
+
+      p El siguiente paso es integrar un CMS (Sistema de gestión de contenido) a tu sitio web, esto lo hara mucho más dinámico al estar preparado para contenido actualizable al momento.¡Excelente opción si desas un sitio actualizado y con un mejor posicionamiento en buscadores!
+
+      a(href="contacto.html").boton ¡Contacta ya!
+      h2 Incluye:
+      ul.servicioIndividual__features
+        li Diseño adaptable a dispositivos móviles
+        li Hosting y Dominio.com por 1 año
+        li Chat en línea directo de la web
+        li Web Optimizada para SEO
+        li Incluye un CMS (Gestor de manejo de contenido)
+        li Hasta 8 Secciones principales
+        li Hasta 10 secciones interiores nivel 2
+        li Formulario de contacto
+        li 5 Cuentas de correo electrónico personalizadas
+        li Tiempo de entrega: 15 a 20 días
+  .ejemplosWeb--bck
+    .ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Ejemplos
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://cirugiamonterrey.mx" target="_blank"): img(src='img/project-cirugiamty.jpg', alt='')
+          .ed-item.s-100
+            h2 Cirugia Monterrey
+          .ed-item.s-100
+            a(href="http://cirugiamonterrey.mx" target="_blank").single-project__link Ver proyecto            
+  //Servicios end section description

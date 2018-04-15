@@ -1,4 +1,4 @@
-extends templates/main-template.pug
+extends ../includes/main-template.pug
 //-Variables
 append config
   -pageTitle = 'Efra Rz'
@@ -15,23 +15,23 @@ block main
     section.ed-container
       .ed-item.s-100.l-60.to-center
         .hola-banner__data
-          h1 Web corporativa dináminca
+          h1 Catálogo en línea
           span  Servicios
   // End section banner
   //Servicios start section description
   .ed-container.servicioIndividual.mb-2
     .ed-item.m-50
-      img(src="img/homeServicios__3.jpg", alt="")
+      img(src="img/homeServicios__4.jpg", alt="")
     .ed-item.m-50
-      h1 Web corporativa dinámica
+      h1 Catálogo en línea
       h2 Precio 
         span desde 
-        | $7000.00 MXN
+        | $9000.00 MXN
       p 
-        span Una robusta opción si tu sitio web necesita estar en constante actualización. 
-        | Recuerda que tener un sitio siempre actualizado y al día hace que tus clientes regresen, además de ayudar a generar nuevos. Con un diseño adaptable para cualquier dispositivo móvil o de escritorio siempre estarás disponible en cualquier lugar y hora.
+        span Comparte tu catálogo de productos para facilitar el proceso de cotización a tus clientes. 
+        | Con una página auto-administrable podrás actualizar la información de todos tus productos y servicios. Gracias a su diseño responsivo estarás siempre al alcance de tus clientes desde cualquier dispositivo, como tablets o smartphones.
 
-      p El siguiente paso es integrar un CMS (Sistema de gestión de contenido) a tu sitio web, esto lo hara mucho más dinámico al estar preparado para contenido actualizable al momento.¡Excelente opción si desas un sitio actualizado y con un mejor posicionamiento en buscadores!
+      p ¡Tu mejor opción si quieres una optima exposición de tus productos!
 
       a(href="contacto.html").boton ¡Contacta ya!
       h2 Incluye:
@@ -40,6 +40,7 @@ block main
         li Hosting y Dominio.com por 1 año
         li Chat en línea directo de la web
         li Web Optimizada para SEO
+        li Catálogo en línea hasta 200 productos dividos en categorías
         li Incluye un CMS (Gestor de manejo de contenido)
         li Hasta 8 Secciones principales
         li Hasta 10 secciones interiores nivel 2
@@ -55,9 +56,19 @@ block main
       .ed-item.s-100.m-50
         .home-projects--single-project.ed-container
           .ed-item.s-100.no-padding
-            a(href="http://cirugiamonterrey.mx" target="_blank"): img(src='img/project-cirugiamty.jpg', alt='')
+            a(href="http://www.diamondstone.com.mx/" target="_blank"): img(src='img/project-diamondstone.jpg', alt='')
           .ed-item.s-100
-            h2 Cirugia Monterrey
+            h2 Diamond Stone
           .ed-item.s-100
-            a(href="http://cirugiamonterrey.mx" target="_blank").single-project__link Ver proyecto            
+            a(href="http://www.diamondstone.com.mx/" target="_blank").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://gensteel.com.mx" target="_blank"): img(src='img/project-gensteel.jpg', alt='')
+          .ed-item.s-100
+            h2 Gensteel
+          .ed-item.s-100
+            a(href="http://gensteel.com.mx" target="_blank").single-project__link Ver proyecto
+            
   //Servicios end section description

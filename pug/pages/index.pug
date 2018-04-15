@@ -1,4 +1,4 @@
-extends templates/main-template.pug
+extends ../includes/main-template.pug
 //-Variables
 append config
   -pageTitle = 'Inicio'
@@ -10,17 +10,17 @@ block inicio
 //- CONTENIDO
 block main
   // Start section banner
-  include includes/sections/home-banner.pug
+  include ../includes/sections/home-banner.pug
   // End section banner
 
   // Start section services
-  include includes/sections/home-services.pug
+  include ../includes/sections/home-services.pug
   // End section services
 
   // Start section blog
-  include includes/sections/home-blog.pug    
+  include ../includes/sections/home-blog.pug    
   // End section blog
 
   // Start section projects
-  include includes/sections/home-projects.pug
+  include ../includes/sections/home-projects.pug
   // End section projects
