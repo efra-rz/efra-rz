@@ -5,7 +5,7 @@ prepros-6.config
 
 /html
 
-/css/*.css
+/css
 
 *.html
 
