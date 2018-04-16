@@ -16,25 +16,37 @@ block main
     section.ed-container
       .ed-item.s-100.l-60.to-center
         .hola-banner__data
-          h1 Portafolio de trabajo
+          h1 Proyecto de ejemplo
           span:  a(href="proyectos.html").breadcrumLink Proyectos
   // End section banner
   
   //ProjectView start section description
-  section.ed-container
+  section.ed-container.proyectoVista
     .ed-item.l-50
       img(src="http://via.placeholder.com/450x550", alt="")
     .ed-item.l-50
       h1 Descripción
+      .separador
       p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt soluta incidunt, nulla accusamus nihil quam fuga magni iure id porro praesentium laborum voluptatibus eos asperiores, optio ipsum maxime? Cumque, suscipit!
-      h2 Tecnologías utilizadas
+      h3 Especifiaciones:
       ul
-        li html
-        li CSS
-        li javascript
-        li Wordpress
-        li php
-      h2 Status del proyecto
-      p En Línea
-        a(href="#") ver link
+        li  Lorem ipsum dolor sit amet.
+      h2 Tecnologías utilizadas
+      .separador
+      ul.proyectoVista--techLogos
+        include ../includes/sections/tecnologias/html.pug
+        include ../includes/sections/tecnologias/css.pug
+        include ../includes/sections/tecnologias/sass.pug
+        include ../includes/sections/tecnologias/pug.pug
+        include ../includes/sections/tecnologias/github.pug
+        include ../includes/sections/tecnologias/gitlab.pug
+        include ../includes/sections/tecnologias/git.pug
+        include ../includes/sections/tecnologias/php.pug
+        include ../includes/sections/tecnologias/mk.pug
+        include ../includes/sections/tecnologias/js.pug
+      h2.proyectoVista--status Status del proyecto: 
+        a(href="") en línea
+      .separador.mb-2
+      a.boton.boton__verlink(href="#") contáctanos
+      a.boton.boton__contactanos(href="#") ver link
   //ProjectView end section description
