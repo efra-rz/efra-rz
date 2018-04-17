@@ -1,6 +1,6 @@
 # Start project
 
-## v1.0.2 (Entrega: 16/Abr/2018 6:00 a.m.)
+## v1.0.2
 
 Completar los siguientes puntos para llegar a la versión v.1.0.2
 
@@ -11,18 +11,18 @@ Completar los siguientes puntos para llegar a la versión v.1.0.2
 - [x]  Agregar a .gitignore los HTML de la raíz del proyecto y carpeta CSS
 
 ### Crear página de vista previa del proyecto (Rama project)
-- [ ]  Establecer estilos de página
-- [ ]  Mostrar boton siguiente anterior
-- [ ]  Logotipos de tecnologías en svg
-- [ ]  Botón para ver el proyecto
-- [ ]  Botón para ir a contacto
-- [ ]  Imagen de captura del proyecto
+- [x]  Establecer estilos de página
+- [ ]  Mostrar boton siguiente anterior(Se pasa para implementar en  version posterior)
+- [x]  Logotipos de tecnologías en svg
+- [x]  Botón para ver el proyecto
+- [x]  Botón para ir a contacto
+- [x]  Imagen de captura del proyecto
 
 ### Crear páginas de proyectos (Rama project)
+- [x]  Senssthetic
 - [ ]  Karla velver
 - [ ]  Odontología
 - [ ]  Encramirez
-- [ ]  etcx...
 
 ### Establecer Menú en Móviles (Rama movilMenu)
 - [ ] Menu amburguesa para dispositivos móviles

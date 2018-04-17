@@ -1,9 +1,18 @@
-extends ../includes/main-template.pug
+extends ../../includes/main-template.pug
+
 //-Variables
 append config
+  //- Establecemos variables generales
   -pageTitle = 'Efra Rz'
   -empresaTitle = 'Programador web en monterrey'
   -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+  //- Variables openGraph
+  -ogSiteName = 'Efra Rz'
+  -ogType = 'website'
+  -ogTitle = 'Efra Rz - Programador web en Monterrey'
+  -ogDescription = 'Programación y desarrollo de páginas de internet para PyME.'
+  -ogImage = 'http://efra-rz.com/img/og-main.jpg'
+
 //- HEADER MENU Y BANNER
 block proyectos
   li.main-menu__item: a(href='/proyectos.html').main-menu__link.main-menu__menu-active Proyectos
@@ -23,7 +32,8 @@ block main
   //ProjectView start section description
   section.ed-container.proyectoVista
     .ed-item.l-50
-      img(src="http://via.placeholder.com/450x550", alt="")
+      .proyectoVista--containerImg
+        a(href="#" target="_blank"): img.proyectoVista--mainImg(src="img/projects/arxav.jpg", alt="")
     .ed-item.l-50
       h1 Descripción
       .separador
@@ -34,19 +44,19 @@ block main
       h2 Tecnologías utilizadas
       .separador
       ul.proyectoVista--techLogos
-        include ../includes/sections/tecnologias/html.pug
-        include ../includes/sections/tecnologias/css.pug
-        include ../includes/sections/tecnologias/sass.pug
-        include ../includes/sections/tecnologias/pug.pug
-        include ../includes/sections/tecnologias/github.pug
-        include ../includes/sections/tecnologias/gitlab.pug
-        include ../includes/sections/tecnologias/git.pug
-        include ../includes/sections/tecnologias/php.pug
-        include ../includes/sections/tecnologias/mk.pug
-        include ../includes/sections/tecnologias/js.pug
+        include ../../includes/sections/tecnologias/html.pug
+        include ../../includes/sections/tecnologias/css.pug
+        include ../../includes/sections/tecnologias/sass.pug
+        include ../../includes/sections/tecnologias/pug.pug
+        include ../../includes/sections/tecnologias/github.pug
+        include ../../includes/sections/tecnologias/gitlab.pug
+        include ../../includes/sections/tecnologias/git.pug
+        include ../../includes/sections/tecnologias/php.pug
+        include ../../includes/sections/tecnologias/mk.pug
+        include ../../includes/sections/tecnologias/js.pug
       h2.proyectoVista--status Status del proyecto: 
-        a(href="") en línea
+        a(href="" target="_blank") en línea
       .separador.mb-2
-      a.boton.boton__verlink(href="#") contáctanos
-      a.boton.boton__contactanos(href="#") ver link
+      a.boton.boton__contactanos(href="#") ¡Contacta Ya!
+      a.boton.boton__verlink(href="#" target="_blank") Ver página
   //ProjectView end section description

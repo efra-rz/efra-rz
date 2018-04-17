@@ -78,11 +78,10 @@ body{
   }
 
   &__contactanos{
-    background-color: red;
+    margin-right: 2em;
   }
   &__verlink{
-    margin-right: 2em;
-    background-color: purple;
+    background-color: $green;
   }
 }
 
@@ -95,6 +94,10 @@ body{
   }
 }
 
+.mediaContainer{
+
+  @include edVideo;
+}
 /*******************
 *******************
 Home-banner-section
@@ -365,6 +368,25 @@ proyectoVista
     line-height: 1.5em;
   }
 
+  &--containerImg{
+    height: 400px;
+    position: relative;
+
+    @include from(l){
+      height: 100%;
+    }
+  }
+
+  &--mainImg{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+  }
+
   &--techLogos{
     padding: 0;
 
@@ -381,7 +403,7 @@ proyectoVista
   &--status{
 
     a{
-      color: green;
+      color: $green;
     }
   }
 }

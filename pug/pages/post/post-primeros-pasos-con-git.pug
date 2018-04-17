@@ -1,8 +1,15 @@
-extends ../includes/main-template.pug
+extends ../../includes/main-template.pug
 //-Variables
 append config
   -pageTitle = 'Inicio'
   -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+  //- Variables openGraph
+  -ogSiteName = 'Efra Rz'
+  -ogType = 'website'
+  -ogTitle = 'Efra Rz - Programador web en Monterrey'
+  -ogDescription = 'Programación y desarrollo de páginas de internet para PyME.'
+  -ogImage = 'http://efra-rz.com/img/og-main.jpg'
+  
 //- HEADER MENU Y BANNER
 block blog
   li.main-menu__item: a(href='/blog.html').main-menu__link.main-menu__menu-active Blog
@@ -25,6 +32,9 @@ block main
       img(src="img/800x500-primeros-pasos-git.jpg", alt="")
       h2.postTitle__center Historia
       p  Git es la tecnología de control de versiones desarrollada por Linus Torvalds. Comenta Torvalds que el objetivo principal git era el dar soporte a su primer gran proyecto la manutención del kernel "Linux", sin embargo hoy en día ya con mas de 20 años de su desarrollo esta herramienta parece estar más viva que nunca, teniendo un auge para poder viajar en el tiempo, crear universos alternos y gestionar nuestros archivos y proyectos.
+      .mediaContainer
+        iframe(width='100%', height='315', src='https://www.youtube.com/embed/dDIX_78ZNk4', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+
       
   // End post content
   .ed-container.mb-2
@@ -49,4 +59,3 @@ block main
       noscript
         | Please enable JavaScript to view the 
         a(href='https://disqus.com/?ref_noscript') comments powered by Disqus.
-  
