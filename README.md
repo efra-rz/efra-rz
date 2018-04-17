@@ -20,9 +20,14 @@ Completar los siguientes puntos para llegar a la versión v.1.0.2
 
 ### Crear páginas de proyectos (Rama project)
 - [x]  Senssthetic
-- [ ]  Karla velver
-- [ ]  Odontología
-- [ ]  Encramirez
+- [x]  Diamond
+- [x]  Arxav
+- [x]  Sanimack
+- [x]  Cirugía
+- [x]  Gensteel
+- [x]  Karla velver
+- [x]  Gema
+- [x]  Odontología
 
 ### Establecer Menú en Móviles (Rama movilMenu)
 - [ ] Menu amburguesa para dispositivos móviles
