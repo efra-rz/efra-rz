@@ -1,0 +1,62 @@
+extends ../../includes/main-template.pug
+
+//-Variables
+append config
+  //- Establecemos variables generales
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Programador web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+  //- Variables openGraph
+  -ogSiteName = 'Efra Rz'
+  -ogType = 'website'
+  -ogTitle = 'Efra Rz - Programador web en Monterrey'
+  -ogDescription = 'Programación y desarrollo de páginas de internet para PyME.'
+  -ogImage = 'http://efra-rz.com/img/og-main.jpg'
+
+//- HEADER MENU Y BANNER
+block proyectos
+  li.main-menu__item: a(href='/proyectos.html').main-menu__link.main-menu__menu-active Proyectos
+
+//- CONTENIDO
+block main
+  // Start section banner
+  .proyectos-banner--bak-container
+    img(src="img/home-banner.jpg", alt="").home-banner__img
+    section.ed-container
+      .ed-item.s-100.l-60.to-center
+        .hola-banner__data
+          h1 Odontología Invisible
+          span:  a(href="proyectos.html").breadcrumLink Regresar a Proyectos
+  // End section banner
+  
+  //ProjectView start section description
+  section.ed-container.proyectoVista
+    .ed-item.l-50
+      .proyectoVista--containerImg
+        a(href="http://odontologiainvisible.com/" target="_blank"): img.proyectoVista--mainImg(src="img/projects/odontologia.jpg", alt="")
+    .ed-item.l-50
+      h1 Descripción
+      .separador
+      p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt soluta incidunt, nulla accusamus nihil quam fuga magni iure id porro praesentium laborum voluptatibus eos asperiores, optio ipsum maxime? Cumque, suscipit!
+      h3 Especifiaciones:
+      ul
+        li  Lorem ipsum dolor sit amet.
+      h2 Tecnologías utilizadas
+      .separador
+      ul.proyectoVista--techLogos
+        include ../../includes/sections/tecnologias/html.pug
+        include ../../includes/sections/tecnologias/css.pug
+        include ../../includes/sections/tecnologias/sass.pug
+        include ../../includes/sections/tecnologias/pug.pug
+        include ../../includes/sections/tecnologias/github.pug
+        include ../../includes/sections/tecnologias/gitlab.pug
+        include ../../includes/sections/tecnologias/git.pug
+        include ../../includes/sections/tecnologias/php.pug
+        include ../../includes/sections/tecnologias/mk.pug
+        include ../../includes/sections/tecnologias/js.pug
+      h2.proyectoVista--status Status del proyecto: 
+        a(href="http://odontologiainvisible.com/" target="_blank") en línea
+      .separador.mb-2
+      a.boton.boton__contactanos(href="contacto.html") ¡Contacta Ya!
+      a.boton.boton__verlink(href="http://odontologiainvisible.com/" target="_blank") Ver página
+  //ProjectView end section description
