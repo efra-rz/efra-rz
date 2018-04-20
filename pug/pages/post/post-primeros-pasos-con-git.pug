@@ -1,18 +1,19 @@
 extends ../../includes/main-template.pug
 //-Variables
 append config
-  -pageTitle = 'Inicio'
-  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+  -empresaTitle = 'Dev4life'
+  -pageTitle = 'Primeros pasos con git'
+  -pageDescription = 'Artículo donde hablamos de manera breve acerca del funcionamiento, instalación, características y comandos básicos de Git.'
   //- Variables openGraph
   -ogSiteName = 'Efra Rz'
-  -ogType = 'website'
-  -ogTitle = 'Efra Rz - Programador web en Monterrey'
-  -ogDescription = 'Programación y desarrollo de páginas de internet para PyME.'
-  -ogImage = 'http://efra-rz.com/img/og-main.jpg'
+  -ogType = 'article'
+  -ogTitle = 'Dev4life - Primeros pasos con git'
+  -ogDescription = 'Artículo donde hablamos de manera breve acerca del funcionamiento, instalación, características y comandos básicos de Git.'
+  -ogImage = 'http://efra-rz.com/img/800x500-primeros-pasos-git.jpg'
   
 //- HEADER MENU Y BANNER
 block blog
-  li.main-menu__item: a(href='/blog.html').main-menu__link.main-menu__menu-active Blog
+  li.main-menu__item: a(href='/blog.html').main-menu__link.main-menu__menu-active Dev4life
 
 //- CONTENIDO
 block main
@@ -23,16 +24,77 @@ block main
       .ed-item.s-100.l-60.to-center
         .hola-banner__data
           h1 Primeros pasos con git
-          span Blog
+          span Post
   // End section banner
   
   // Start post content
   .ed-container
     article.ed-item.post.mb-2
       img(src="img/800x500-primeros-pasos-git.jpg", alt="")
-      h2.postTitle__center Historia
-      p  Git es la tecnología de control de versiones desarrollada por Linus Torvalds. Comenta Torvalds que el objetivo principal git era el dar soporte a su primer gran proyecto la manutención del kernel "Linux", sin embargo hoy en día ya con mas de 20 años de su desarrollo esta herramienta parece estar más viva que nunca, teniendo un auge para poder viajar en el tiempo, crear universos alternos y gestionar nuestros archivos y proyectos.
-      .mediaContainer
+      //h2.postTitle__center Historia
+      h2 Historia
+      hr
+      p  Git es la tecnología de control de versiones desarrollada por Linus Torvalds. Comenta Torvalds en la sesión "Code Power" de la conferencia TED2016 que uno de los temas que surgieron para mantener Linux fue cuando paso a tener mucha gente trabajando en el proyecto y cómo el tenía que mantener ese código, esa fue la principal razón del nacimiento de Git. "Git es mi segundo gran poryecto después de linux, y su razón de exisitir es para poder mantener Linux".
+      
+      h2 Funcionamiento
+      hr
+      p Imagina la que tienes una cámara de fotos mágica a travéz de la cuál tu puedes viajar en el tiempo entre las fotos que sacas, de modo que puedes corregir tus errores o probar desiciones como "que pasaría si" sin tomar ningún riesgo, puesto que podrías tomar una foto en un punto seguro de tu historia para volver.
+      
+      p Pues está es una de las muchas acciones que puedes hacer con el sistema de control de versiones Git, crear "Checkpoints" de tus proyectos y viajar entre ellos. Para ello es seguir los estos pasos
+      
+      ul
+        li Modificas una serie de archivos en tu directorio de trabajo.
+        li Añades estos archivos en un espacio denominado "área de preparación".
+        li Confirmas cambios, esto hace que los archivos salten del "área de preparación" a una "instantánea" o punto en el cuál ya estás listo para saltar en el espacio tiempo.
+      
+      h2 Instalación
+      hr
+      p Podemos trabajar con Git tanto en un entorno gráfico cómo en la línea de comandos, a mi punto de vista recomendaría empezar con la línea de comandos, creo que la curva de aprendizaje puede ser mucho más sencilla porque con ella sólo dedicas tu atención a la acción específica a realizar.
+      
+      p Es muy probable que ya venga instalado tanto en Linux como para Mac en caso de no ser así lo puedes descargar directo de la página de Git, en Windows no biene instalado por defecto ahy si tienes que descargarlo, te dejo los Links a continuación:
+      
+      ul
+        li: a(href="https://git-scm.com/download/mac" target="_blank") Descarga para Mac
+        li: a(href="https://git-scm.com/download/linux" target="_blank") Descarga para Linux
+        li: a(href="https://gitforwindows.org/" target="_blank") Descarga para Windows
+      
+      h2 Configuración
+      hr
+      p Una vez Git instalado comprobamos la versión de éste con el siguiente comando:
+      
+      code(style="background:#000; color:#fff; display:block;") 
+        p git --version
+        
+      p Ahora pasamos a configurar tu nombre de usuario correo y un el editor de texto que desees utilizar.
+      
+      code(style="background:#000; color:#fff; display:block;")
+        p git config --global user.name "John Doe"
+        p git config --global user.email johndoe@example.com
+        p git config --global core.editor nano
+        p git config --list
+      
+      h2 Comandos Básicos del flujo de trabajo
+      hr
+      p Primero abrimos la terminal en el directorio de trabajo del proyecto y ejecutamos el comando:
+      code(style="background:#000; color:#fff; display:block;")
+        p git init
+      P Con este comando agregamos todos nuestros archvios al área de preparación:
+      code(style="background:#000; color:#fff; display:block;")
+        p git add .
+      p Con este comando revisamos el estatus de nuestro proyecto:
+      code(style="background:#000; color:#fff; display:block;")
+        p git status
+      p Con éste comando agregamos creamos el commit o instantánea de nuestro proyecto:
+      code(style="background:#000; color:#fff; display:block;")
+        p git commit -m "Iniciamos el proyecto"
+      
+      p  En este punto ya está listo nuestro punto en la historia para viajar, si deseamos crear nuevos puntos en la historia volvemos a repetir los pasos de agregar archivos al área de preparación, revisar cambios y hacemos el commit o instantánea.
+      
+      p Si llegaste hasta este punto de este artículo agradezco mucho tu tiempo, en el siguiente artículo veremos más en forma con un caso práctico el funcionamiento de esta genial herramienta.
+      
+      p ¡Saludos y se cuidan! 
+
+      //-.mediaContainer
         iframe(width='100%', height='315', src='https://www.youtube.com/embed/dDIX_78ZNk4', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
 
       
