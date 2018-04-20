@@ -30,5 +30,5 @@ Completar los siguientes puntos para llegar a la versión v.1.0.2
 - [x]  Odontología
 
 ### Establecer Menú en Móviles (Rama movilMenu)
-- [ ] Menu amburguesa para dispositivos móviles
-- [ ] Implementar codigo de ejemplo de FidelTamezSalinas https://codepen.io/FTamez/pen/JLQdqX?editors=0100
+- [X] Menu amburguesa para dispositivos móviles
+- [X] Implementar codigo de ejemplo de FidelTamezSalinas https://codepen.io/FTamez/pen/JLQdqX?editors=0100
