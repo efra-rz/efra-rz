@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Start project
 
 ## v1.0.2
