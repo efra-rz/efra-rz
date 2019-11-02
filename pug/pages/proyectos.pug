@@ -1,0 +1,104 @@
+extends ../includes/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block proyectos
+  li.main-menu__item: a(href='/proyectos.html').main-menu__link.main-menu__menu-active Proyectos
+//- CONTENIDO
+block main
+  // Start section banner
+  include ../includes/sections/proyectos-banner.pug
+  // End section banner
+  
+  //Proyectos start section description
+  .home-projects--back-container
+    section.ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Proyectos
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-senssthetic.html"): img(src='img/project-senssthetic.jpg', alt='')
+          .ed-item.s-100
+            h2 Senssthetic
+          .ed-item.s-100
+            a(href="proyecto-web-senssthetic.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-diamond-stone.html"): img(src='img/project-diamondstone.jpg', alt='')
+          .ed-item.s-100
+            h2 Diamond Stone
+          .ed-item.s-100
+            a(href="proyecto-web-diamond-stone.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-arxav.html"): img(src='img/project-arxav.jpg', alt='')
+          .ed-item.s-100
+            h2 Arxav
+          .ed-item.s-100
+            a(href="proyecto-web-arxav.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-sanimack.html"): img(src='img/project-sanimack.jpg', alt='')
+          .ed-item.s-100
+            h2 Sanimack
+          .ed-item.s-100
+            a(href="proyecto-web-sanimack.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-cirugiamty.html"): img(src='img/project-cirugiamty.jpg', alt='')
+          .ed-item.s-100
+            h2 Cirugia Monterrey
+          .ed-item.s-100
+            a(href="proyecto-web-cirugiamty.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-gensteel.html"): img(src='img/project-gensteel.jpg', alt='')
+          .ed-item.s-100
+            h2 Gensteel
+          .ed-item.s-100
+            a(href="proyecto-web-gensteel.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-karlavelver.html"): img(src='img/project-karlavelver.jpg', alt='')
+          .ed-item.s-100
+            h2 Karla Velver
+          .ed-item.s-100
+            a(href="proyecto-web-karlavelver.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-gema.html"): img(src='img/project-gema.jpg', alt='')
+          .ed-item.s-100
+            h2 Agencia Gema
+          .ed-item.s-100
+            a(href="proyecto-web-gema.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50.l-1-3
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-odontologia-invisible.html"): img(src='img/project-odinv.jpg', alt='')
+          .ed-item.s-100
+            h2 Odontología Invisible
+          .ed-item.s-100
+            a(href="proyecto-web-odontologia-invisible.html").single-project__link Ver proyecto
+
+  //Proyectos end section description

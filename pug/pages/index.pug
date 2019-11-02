@@ -1,0 +1,26 @@
+extends ../includes/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Inicio'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block inicio
+  li.main-menu__item: a(href='/').main-menu__link.main-menu__menu-active Inicio
+
+//- CONTENIDO
+block main
+  // Start section banner
+  include ../includes/sections/home-banner.pug
+  // End section banner
+
+  // Start section services
+  include ../includes/sections/home-services.pug
+  // End section services
+
+  // Start section blog
+  include ../includes/sections/home-blog.pug    
+  // End section blog
+
+  // Start section projects
+  include ../includes/sections/home-projects.pug
+  // End section projects

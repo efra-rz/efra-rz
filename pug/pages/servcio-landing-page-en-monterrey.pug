@@ -1,0 +1,68 @@
+extends ../includes/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block servicios
+  li.main-menu__item: a(href='/servicios.html').main-menu__link.main-menu__menu-active Servicios
+//- CONTENIDO
+block main
+  // Start section banner
+  .servicios-banner--bak-container
+    img(src="img/home-banner.jpg", alt="").home-banner__img
+    section.ed-container
+      .ed-item.s-100.l-60.to-center
+        .hola-banner__data
+          h1 Desarrollo de Landing Page
+          span  Servicios
+  // End section banner
+  //Servicios start section description
+  .ed-container.servicioIndividual.mb-2
+    .ed-item.m-50
+      img(src="img/homeServicios__1.jpg", alt="")
+    .ed-item.m-50
+      h1 Landing Page
+      h2 Precio 
+        span desde 
+        | $3500.00 MXN
+      p 
+        span Digitaliza tu empresa con un sitio web personalizado. 
+        | Una landing page es una excelente opción si lo que buscas es emprender tu negocio y no dispones de mucho capital para hacer una fuerte inversión. Con un diseño adaptable para cualquier dispositivo móvil o de escritorio siempre estarás disponible en cualquier lugar y hora.
+
+      p A la fecha, toda empresa debe asegurarse tener una excelente presencia en la web. Una landing page te ayudará a brindar la información básica que tus clientes necesitan acerca de tu empresa. ¡Considera ésta tu mejor opción si estas emprendiendo tu negocio!
+      a(href="contacto.html").boton ¡Contacta ya!
+      h2 Incluye:
+      ul.servicioIndividual__features
+        li Hosting y Dominio.com por 1 año
+        li Chat en línea directo de la web
+        li Formulario de contacto
+        li Diseño adaptable a dispositivos móviles
+        li Cuenta de correo electrónico personalizada
+        li Tiempo de entrega: 5 a 10 días
+  .ejemplosWeb--bck
+    .ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Ejemplos
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-karlavelver.html"): img(src='img/project-karlavelver.jpg', alt='Proyecto de Karla Velver')
+          .ed-item.s-100
+            h2 Karla Velver
+          .ed-item.s-100
+            a(href="proyecto-web-karlavelver.html").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="proyecto-web-odontologia-invisible.html"): img(src='img/project-odinv.jpg', alt='Proyecto Odontología Invisible')
+          .ed-item.s-100
+            h2 Odontología Invisible
+          .ed-item.s-100
+            a(href="proyecto-web-odontologia-invisible.html").single-project__link Ver proyecto
+
+  //Servicios end section description

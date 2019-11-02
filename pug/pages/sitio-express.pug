@@ -1,0 +1,67 @@
+extends ../includes/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Desarrollo web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block servicios
+  li.main-menu__item: a(href='/servicios.html').main-menu__link.main-menu__menu-active Servicios
+//- CONTENIDO
+block main
+  // Start section banner
+  .servicios-banner--bak-container
+    img(src="img/home-banner.jpg", alt="").home-banner__img
+    section.ed-container
+      .ed-item.s-100.l-60.to-center
+        .hola-banner__data
+          h1 Sitio Express
+          span  Servicios
+  // End section banner
+  //Servicios start section description
+  .ed-container.servicioIndividual.mb-2
+    .ed-item.m-50
+      img(src="img/homeServicios__5.jpg", alt="")
+    .ed-item.m-50
+      h1 Sitio express
+      h2 Precio 
+        span desde 
+        | $1800.00 MXN
+      p 
+        span Digitaliza tu empresa con un sitio web personalizado. 
+        | Tu sitio express tipo landing page es una excelente opción si lo que buscas es emprender tu negocio con la más mínima inversión. Con un diseño adaptable para cualquier dispositivo móvil o de escritorio siempre estarás disponible en cualquier lugar y hora.
+
+      p Tu sitio express te ayudará a brindar la información básica que tus clientes necesitan acerca de tu empresa. ¡Considera ésta tu mejor opción si estas emprendiendo tu negocio!
+      a(href="contacto.html").boton ¡Contacta ya!
+      h2 Incluye:
+      ul.servicioIndividual__features
+        li Hosting y Dominio.com por 1 año
+        li Formulario de contacto
+        li Diseño basado en plantill adaptable a dispositivos móviles
+        li Cuenta de correo electrónico personalizada
+        li Tiempo de entrega: 3 a 5 días
+  //.ejemplosWeb--bck
+    .ed-container
+      .ed-item.s-100.main-center
+        h1.section--title Ejemplos
+          .line-left
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://karlavelver.com" target="_blank"): img(src='img/project-karlavelver.jpg', alt='')
+          .ed-item.s-100
+            h2 Karla Velver
+          .ed-item.s-100
+            a(href="http://karlavelver.com" target="_blank").single-project__link Ver proyecto
+      //Proyecto
+      .ed-item.s-100.m-50
+        .home-projects--single-project.ed-container
+          .ed-item.s-100.no-padding
+            a(href="http://odontologiainvisible.com/" target="_blank"): img(src='img/project-odinv.jpg', alt='')
+          .ed-item.s-100
+            h2 Odontología Invisible
+          .ed-item.s-100
+            a(href="http://odontologiainvisible.com/" target="_blank").single-project__link Ver proyecto
+
+  //Servicios end section description

@@ -1,0 +1,42 @@
+extends ../includes/main-template.pug
+//-Variables
+append config
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Programador web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+//- HEADER MENU Y BANNER
+block acerca
+  li.main-menu__item: a(href='/hola.html').main-menu__link.main-menu__menu-active Hola
+
+//- CONTENIDO
+block main
+  // Start section banner
+  include ../includes/sections/hola-banner.pug
+  // End section banner
+  
+  //Hola start section description
+  section.ed-container.holaMain
+    .ed-item.l-40.l-order-2.holaMain--skills
+      h2 Habilidades
+      ul
+        li Responsive Desing / UI
+        li HTML / CSS / Javascript
+        li PHP / MySQL / Wordpress
+        li Markdown / Git / Github
+        li Pug / Sass
+        li Frameworks Frontend
+        li Paquetería de Diseño Gráfico
+        li Creación de logotipos
+    .ed-item.l-60.l-order-1.holaMain--description
+      h2 Hola
+      p Soy Efraín Rmz. Rdz., mi objetivo es ayudar a hacer crecer a tu marca o empresa travéz de un excelente diseño y una correcta programación web, resido en la ciudad de Mty, N.L., México, iniciando actividades desde 2012.
+
+      p Actualmente desarrollo y colaboro en proyectos web de manera independiente, orientado en tecnologías Frontend (Html, CSS y Javascript), con conocimientos básicos en tecnologías de Backend (PHP,Wordpress,MySQL).
+
+      p Además del diseño y la programación trato  de llevar un estilo de vida saludable, me agrada hacer ejercicio tanto en gimnasio como al aire libre.
+
+      p En el 2017 cambié mis habitos alimenticios y aunque no me considero vegetariano llevo la mayor parte del tiempo una dieta libre de alimentos procesados y de origen animal, lo que me ha ayudado a mejorar mi rendimiento físico y mental.
+
+      p ¡Saludos y en lo que te pueda ayudar no dudes en contactarme!
+  
+  //Hola end section description

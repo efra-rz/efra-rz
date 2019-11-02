@@ -1,0 +1,56 @@
+extends ../../includes/main-template.pug
+
+//-Variables
+append config
+  //- Establecemos variables generales
+  -pageTitle = 'Efra Rz'
+  -empresaTitle = 'Programador web en monterrey'
+  -pageDescription = 'Efra-Rz Programador web independiente en Mty.N.L.-MX'
+  //- Variables openGraph
+  -ogSiteName = 'Efra Rz'
+  -ogType = 'website'
+  -ogTitle = 'Efra Rz - Programador web en Monterrey'
+  -ogDescription = 'Programación y desarrollo de páginas de internet para PyME.'
+  -ogImage = 'http://efra-rz.com/img/og-main.jpg'
+
+//- HEADER MENU Y BANNER
+block proyectos
+  li.main-menu__item: a(href='/proyectos.html').main-menu__link.main-menu__menu-active Proyectos
+
+//- CONTENIDO
+block main
+  // Start section banner
+  .proyectos-banner--bak-container
+    img(src="img/home-banner.jpg", alt="").home-banner__img
+    section.ed-container
+      .ed-item.s-100.l-60.to-center
+        .hola-banner__data
+          h1 Diamond Stone
+          span:  a(href="proyectos.html").breadcrumLink Regresar a Proyectos
+  // End section banner
+  
+  //ProjectView start section description
+  section.ed-container.proyectoVista
+    .ed-item.l-50
+      .proyectoVista--containerImg
+        a(href="http://www.diamondstone.com.mx/" target="_blank"): img.proyectoVista--mainImg(src="img/projects/diamond.jpg", alt="")
+    .ed-item.l-50
+      h1 Descripción
+      .separador
+      p Colaboracón con 
+        a(href="https://www.facebook.com/2twored/" target="_blank") TwoRed
+      p Desarrollo de sitio web para empresa de diseño de interiores Diamond Stone. 
+      
+      p Mi función en este proyecto fue la programación mientras que Twored se encargo del diseño, línea gráfica y generar contenido. La web es adaptable para cualquier dispositivo, su desarrollo es en HTML, CSS, JS. Funcionalidad de Web Informativa como catálogo de productos.
+      h2 Tecnologías utilizadas
+      .separador
+      ul.proyectoVista--techLogos
+        include ../../includes/sections/tecnologias/html.pug
+        include ../../includes/sections/tecnologias/css.pug
+        include ../../includes/sections/tecnologias/js.pug
+      h2.proyectoVista--status Status del proyecto: 
+        a(href="http://www.diamondstone.com.mx/" target="_blank") en línea
+      .separador.mb-2
+      a.boton.boton__contactanos(href="contacto.html") ¡Contacta Ya!
+      a.boton.boton__verlink(href="http://www.diamondstone.com.mx/" target="_blank") Ver página
+  //ProjectView end section description

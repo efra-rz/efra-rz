@@ -1,0 +1,134 @@
+block config
+  include config.pug
+doctype html
+html(lang='es' prefix="og: http://ogp.me/ns#")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(name='description' content=pageDescription)
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-117780133-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-117780133-1');  
+    //openGraph
+    meta(property="og:site_name" content=ogSiteName )
+    meta(property="og:type" content=ogType)
+    meta(property="og:title" content=ogTitle)
+    meta(property="og:description" content=ogDescription)
+    meta(property="og:image" content=ogImage)
+    
+    title #{pageTitle} | #{empresaTitle}
+    link(rel='stylesheet', href='css/style.css')
+    // Start of Zendesk Chat Script
+    script(type='text/javascript').
+      window.$zopim || (function(d, s) {
+      var z = $zopim = function(c) {
+      z._.push(c)
+      },
+      $ = z.s =
+      d.createElement(s),
+      e = d.getElementsByTagName(s)[0];
+      z.set = function(o) {
+      z.set.
+      _.push(o)
+      };
+      z._ = [];
+      z.set._ = [];
+      $.async = !0;
+      $.setAttribute("charset", "utf-8");
+      $.src = "https://v2.zopim.com/?5X6uiB8fHthbsbilZe3sLb6R35xwUzXe";
+      z.t = +new Date;
+      $.
+      type = "text/javascript";
+      e.parentNode.insertBefore($, e)
+      })(document, "script");
+    // End of Zendesk Chat Script
+  body.bodyBg
+    header.main-header__topbar
+      .ed-container
+        // Start logo
+        .ed-item.s-50.m-100.lm-40.cross-center.logo-align
+          a(href="/"): img(src='img/logo-web.png', alt='')
+        // End logo
+        .ed-item.s-50.cross-center.main-end.hideButon
+          .botonMenu#botonMenu Menu
+        // Start menu
+        nav.ed-item.s-100.lm-60.cross-center.menuNav#menuNav
+          //ul.ed-menu.l-horizontal
+          ul.main-menu.ed-menu.m-horizontal
+            block inicio
+              li.main-menu__item: a(href='/').main-menu__link Inicio
+            block acerca
+              li.main-menu__item: a(href='/hola.html').main-menu__link Hola
+            block servicios
+              li.main-menu__item: a(href='/servicios.html').main-menu__link Servicios
+            block proyectos
+              li.main-menu__item: a(href='/proyectos.html').main-menu__link Proyectos
+            block blog
+              li.main-menu__item: a(href='/blog.html').main-menu__link Dev4life
+            block contacto
+              li.main-menu__item: a(href='/contacto.html').main-menu__link Contacto
+        // End menu
+    
+    //********************
+    //*Start main content*
+    //********************
+    
+    block main
+
+    //*******************
+    //****End content****
+    //*******************
+    
+    // Start footer
+    footer.main-footer--bak-container
+      // Start footer main container
+      article.ed-container
+        // Start footer about
+        section.ed-item.s-100.m-500.m-1-3
+          h1 Acerca
+          img(src='img/logo-web.png', alt='')
+          p.footer-description
+            | Hola, soy programador y desarrollador web independiente orientado en tecnologías Frontend (HTML, CSS, JS) y me encuentro ubicado en Mty, N.L. México.
+          ul.footer__social-icons
+            li: a(href="https://www.facebook.com/efradesarrollo/" target="_blank"): img(src="img/if_facebook_48.png", alt="" width="40px")
+            li: a(href="skype:effrix?chat" target="_blank"): img(src="img/if_skype_48.png", alt="" width="40px")
+            li: a(href="https://github.com/efrix" target="_blank"): img(src="img/if_github_48.png", alt="" width="40px")
+            li: a(href="https://telegram.me/efrix396" target="_blank"): img(src="img/if_telegram_48.png", alt="" width="40px")
+            li: a(href="https://api.whatsapp.com/send?phone=5218184602228&text=Hi, I contacted you Through your website." target="_blank"): img(src="img/if_whatsapp_48.png", alt="" width="40px")
+            
+        // End footer about
+        // Start footer contact
+        section.ed-item.s-100.m-500.m-1-3
+          h1 Blog
+          ul.footer-blog
+            li: a(href='post-primeros-pasos-con-git.html') Primeros pasos en git
+          h1 Enlaces
+          ul.footer-enlaces
+            li: a(href='servcio-landing-page-en-monterrey.html') Landing page
+            li: a(href='diseno-web-monterrey-informativa.html') Página web informativa
+            li: a(href="web-corporativa-dinamica.html") Página web corporativa
+            li: a(href="catalogo-en-linea.html") Catálogo en Línea
+
+        // End footer contact
+        // Start footer Facebook
+        section.ed-item.s-100.m-500.m-1-3
+          h1 Contacto
+          address 
+            p Allende 314 Pte. Centro de Mty, NL, MX.
+            p Tel: (044) 818-460-2228
+            p Email: info@efra-rz.com
+        // End footer Facebook
+      // End footer main container
+      .footer-bottom
+        section
+          p 2018 || efra-rz.com
+    // End footer
+    
+    // Scripts
+    //script(src='js/ed-grid.js')
+    script(src='js/botonMenu.js')
