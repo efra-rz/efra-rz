@@ -31,6 +31,10 @@ Completar los siguientes puntos para llegar a la versión v.1.0.2
 
 ### Establecer Menú en Móviles (Rama movilMenu)
 - [X] Menu amburguesa para dispositivos móviles
+<<<<<<< HEAD
 - [X] Implementar codigo de ejemplo de FidelTamezSalinas https://codepen.io/FTamez/pen/JLQdqX?editors=0100
 
 Una línea creada en windows.
+=======
+- [X] Implementar codigo de ejemplo de FidelTamezSalinas https://codepen.io/FTamez/pen/JLQdqX?editors=0100
+>>>>>>> de199d4f4bae2c4aec81803a37408565d26b9733
