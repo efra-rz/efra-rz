@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 549cb14c89bf300c6d03aa52af883a479f451363
 # Start project
 
 ## v1.0.2
@@ -33,8 +37,11 @@ Completar los siguientes puntos para llegar a la versión v.1.0.2
 - [X] Menu amburguesa para dispositivos móviles
 <<<<<<< HEAD
 - [X] Implementar codigo de ejemplo de FidelTamezSalinas https://codepen.io/FTamez/pen/JLQdqX?editors=0100
+<<<<<<< HEAD
 
 Una línea creada en windows.
 =======
 - [X] Implementar codigo de ejemplo de FidelTamezSalinas https://codepen.io/FTamez/pen/JLQdqX?editors=0100
 >>>>>>> de199d4f4bae2c4aec81803a37408565d26b9733
+=======
+>>>>>>> 549cb14c89bf300c6d03aa52af883a479f451363
