@@ -1,13 +1,10 @@
 #ignorar configuracion de prepross
-prepros-6.config
+prepros.config
 
 #ignorar archivos generados por prepross
 
 /html
 
-/css
-
-*.html
 
 #ingora directorio de dolphin
 .directory
